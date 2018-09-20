@@ -1,0 +1,86 @@
+
+/*==========================
+BASIC STRUCTURE
+==========================*/
+#wrapper {
+	width: 960px;
+	padding: 5px;
+	margin: 20px auto;
+}
+#header {
+	height:100px;
+}
+#sidebar {
+	float: left;
+	width: 300px;
+}
+#content {
+	float: right;
+	width: 600px;
+}
+#footer {
+	clear: both;
+}
+/*================================================
+COLORS AND FONTS
+color.adobe.com
+
+#7A91B2
+#87B8FF
+#D1E4FF
+#B29C6E
+#FFEFD1
+================================================*/
+body {
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #87B8FF;
+	/*background-color: #B29C6E;*/
+	background-image: url("../images/background.jpg");
+}
+
+#header, #sidebar, #content, #footer {
+	/*background-color: #FFEFD1;*/
+	background-color:rgba(255,239,209,0.20);
+	margin-bottom: 4px;
+	border: double;
+	border-radius: 8px;
+	border-color: grey;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/*=========================================
+RESPONSIVE DESIGN
+=========================================*/
+@media screen and (max-width: 980px) {
+	
+}
+@media screen and (max-width: 700px) {
+	
+}
+@media screen and (max-width: 480px) {
+	
+}
+/*=========================================
+Phones
+=========================================*/
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 568px) {
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
