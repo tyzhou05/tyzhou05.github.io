@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>7.8</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var d = new Date();
+		var hour = d.getHours();
+		if(hour >= 6 && hour <= 10) {
+			alert("You can find a continental breakfast in the lobby.");
+		} else if (hour >= 11 && hour <= 14){
+			var reservation = confirm("You can visit the restaurant. Would you like to place a reservation?");
+		} else if (hour >= 17 && hour <= 21){
+			var reservation = confirm("You can order room service or visit the restaurant. Would you like to place a reservation at the restaurant?");
+		} else {
+			alert("You will have to wait or go out for a snack.");
+		}
+	</script>
+</body>
+</html>

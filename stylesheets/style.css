@@ -53,12 +53,29 @@ body {
 RESPONSIVE DESIGN
 =========================================*/
 @media screen and (max-width: 980px) {
-	
+	#wrapper {
+		width : 94%;
+	}
+	#content {
+		width : 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
 }
 @media screen and (max-width: 700px) {
-	
+	#content, #sidebar {
+		width: auto;
+		float: none;
+	}
+	#header {
+		height: auto;
+	}
 }
 @media screen and (max-width: 480px) {
+	#h1 {
+		font-size: 24px;
+	}
 	
 }
 /*=========================================
@@ -67,8 +84,26 @@ Phones
 @media only screen
 	and (min-device-width: 320px)
 	and (max-device-width: 568px) {
-		
+		body {
+			font-size: 40px
+		}
+		#header {
+			height: auto;
+		}
+		#content {
+			width: auto;
+		}
+		#sidebar {
+			width: auto;
+			clear: both;
+		}
+		#header, #sidebar, #content, #footer {
+			border-radius: 16px;
+			border-width: 8px;
+		}
 }
+
+
 
 
 

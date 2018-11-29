@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		while(true) { //"true" is always true and will always run
+			var score = eval(prompt("What was your score on the quiz?"));
+			if(score < 0 || score > 100 ) {
+				alert("Error. Your grade cannot be less than 0 or greater than 10.");
+				continue; //proceed to the top of the loop and repeat
+			}
+			if(score >= 90)
+				{alert("Congrats! You got an A! :D");}
+			else if(score >= 80)
+				{alert("Congrats! You got a B.");}
+			else if(score >=70)
+				{alert("You got a C!");}
+			else if(score >=60)
+				{alert("You got a D. You'd better try harder!");}
+			else
+				{alert("You got an F. Have you considered finding a tutor?");}
+			var answer = confirm("Do you want to enter another grade?");
+			if (answer != true) {
+				break; //end loop
+			}
+		}
+	</script>
+</body>
+</html>

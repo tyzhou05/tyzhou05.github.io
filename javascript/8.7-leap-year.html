@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.7 - Leap Year</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		function isLeapYear(year) {
+			// check if year is a leap year
+			if (y % 4 == 0 && y % 100 != 0 ) {
+				document.write("Your year is a leap year!");
+			} else if(y % 100 != 0 && y % 400) {
+
+			}
+			// if it's a leap year
+				//return true
+			// else
+				// return false
+		}
+
+		var y = Number(prompt("Enter a year!"));
+
+		// prints either true or false
+		document.write(isLeapYear(y));
+	</script>
+</body>
+</html>

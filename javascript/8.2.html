@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var CookieClicker = {
+			cookies: 0,
+			click: function() {
+				// increment cookie score
+				this.cookies++;
+				//save in Local
+				if (typeof(Storage) !== "undefined") {
+					localStorage.setItem("cookies", this.cookies);
+				} else {
+					console.log("Sorry, your browser sucks and does not support Web Storage!");
+				}
+				//updates page
+				this.update_screen();
+			},
+			update_screen: function() {
+				document.getElementById("output").innerHTML = this.cookies;
+			},
+			init: function() {
+				//check if cooies in localStorage
+				if (typeof(Storage) !== "undefined") {
+				var c = localStorage.getItem("cookies");
+				if(c != null) {
+					CookieClicker.cookies = Number(c);
+					CookieClicker.update_screen();
+					} else {
+						console.log("Sorry, your browser sucks and does not support Web Storage!");
+					}
+				}
+			}
+		}
+		window.onload = CookieClicker.init;
+	</script>
+	<a href="JavaScript:CookieClicker.click();"><img src="../images/cookie.png" alt="Cookie"></a>
+		<p id="output">0</p>
+</body>
+</html>

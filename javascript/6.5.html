@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>6.5 - Google Maps</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	var distance = prompt("What's your distance?");
+	var speed = prompt("What's your speed?");
+	
+	var time = distance / speed;					
+	var minutes = time * 60;					
+	var modulus = minutes % 60;
+	var hours = (minutes - modulus) / 60; 
+	
+	alert("Your time will be " + hours + " hour(s), and " + modulus + " minutes.");
+</script>
+</body>
+</html>

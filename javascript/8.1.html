@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		function add_em_up(num1, num2) {
+			//sanitize input
+			num1 = Number(num1);
+			num2 = Number(num2);
+			var sum = num1 + num2;
+			return sum;
+		}
+		alert("I will add two numbers together.");
+		var x = prompt("Enter your first number:");
+		var y = prompt("Enter your second number:");
+		//call function
+		alert(add_em_up(x,y));
+	</script>
+</body>
+</html>
