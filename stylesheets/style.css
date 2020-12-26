@@ -37,6 +37,45 @@ color.adobe.com
 #FFEFD1
 ================================================*/
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #C6E9FF;
+}
+
+nav {
+	margin: auto;
+	height: 70px;
+	float: center;
+	width: 960px;
+	padding: 5px;
+	border-bottom: 2px solid grey;
+	margin-bottom: 0;
+	display: inline-block;
+	list-style-type: none;
+}
+
+a.nav-a {
+
+}
+
+ul.nav-ul {
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 0px;
+	text-align: center;
+}
+
+li.link {
+	margin: 10px;
+	font-size: 20px;
+	display: inline;
+	text-align: center;
+}
+
 body {
 	/*font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
 	/*font-family: 'Actor'; font-size = 24px;*/
@@ -53,7 +92,7 @@ body {
 
 h1 {
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	border-bottom: 3px solid grey;
+	border-bottom: 3px solid black;
 	box-sizing: border-box;
 	font-size: 36px;
 	margin-bottom: 0;
@@ -69,7 +108,7 @@ h2 {
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: 30;
-	line-height: 2;
+	line-height: 2.0;
 }
 
 h3 {
@@ -88,6 +127,20 @@ h4 {
 }
 
 p {
+	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+ul.circle-ul {
+	list-style-type: circle;
+	margin-right: -2em;
+	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+li.nested-li {
 	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
