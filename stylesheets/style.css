@@ -39,11 +39,14 @@ color.adobe.com
 
 a {
 	text-decoration: none;
+	color: #06c;
 }
 
 a:hover {
 	background-color: #C6E9FF;
 }
+
+	/*#C6E9FF;*/
 
 nav {
 	margin: auto;
@@ -150,6 +153,12 @@ li {
 	font-size: 16px;
 	line-height: 1.5;
 }
+
+img.one {
+	max-width: auto;
+	height: auto;
+}
+
 
 #sidebar, #content, #footer {
 
