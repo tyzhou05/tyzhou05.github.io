@@ -1,2 +1,2 @@
 # tyzhou05.github.io
-My personal website. Made with HTML, CSS, and GitHub Pages. Thanks for stopping by!
+My personal website. Made with HTML, CSS, and GitHub Pages.
