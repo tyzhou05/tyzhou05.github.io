@@ -37,6 +37,10 @@ color.adobe.com
 #FFEFD1
 ================================================*/
 
+* {
+	overflow-anchor: none;
+}
+
 a {
 	text-decoration: none;
 	color: #06c;
@@ -64,10 +68,12 @@ a.nav-a {
 }
 
 ul.nav-ul {
+	/*
 	margin: 0px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 0px;
+	*/
 	text-align: center;
 }
 
@@ -83,6 +89,7 @@ body {
 	/*font-family: 'Actor'; font-size = 24px;*/
 	color: #24292e;
 	background-color: #F0DEA3;
+	background-size: auto;
 	/*line-height: 1.5;*/
 
 	/*text color ^ */
@@ -179,9 +186,11 @@ img.one {
 
 }
 
+
 /*=========================================
 RESPONSIVE DESIGN
 =========================================*/
+
 @media screen and (max-width: 980px) {
 	#wrapper {
 		width : 94%;
@@ -211,11 +220,12 @@ RESPONSIVE DESIGN
 /*=========================================
 Phones
 =========================================*/
+
 @media only screen
 	and (min-device-width: 320px)
 	and (max-device-width: 568px) {
 		body {
-			font-size: 40px
+			font-size: 40px;
 		}
 		#header {
 			height: auto;
