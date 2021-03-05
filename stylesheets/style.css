@@ -37,10 +37,6 @@ color.adobe.com
 #FFEFD1
 ================================================*/
 
-* {
-	overflow-anchor: none;
-}
-
 a {
 	text-decoration: none;
 	color: #06c;
@@ -89,7 +85,7 @@ body {
 	/*font-family: 'Actor'; font-size = 24px;*/
 	color: #24292e;
 	background-color: #F0DEA3;
-	background-size: auto;
+	margin: auto;
 	/*line-height: 1.5;*/
 
 	/*text color ^ */
