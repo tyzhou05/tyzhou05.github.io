@@ -8,8 +8,8 @@ body {
 }
 
 p.text-left {
-    padding-top: 10px;
-    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-left: 500px;
     padding-right: 500px;
 }
@@ -25,16 +25,16 @@ h2.text-center {
 h3.text-left {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 500px;
-    margin-right: 500px;
+    padding-left: 500px;
+    padding-right: 500px;
 }
 
 h4.text-left {
     font-size: 16px;
     margin-top: 30px;
     margin-bottom: 10px;
-    margin-left: 500px;
-    margin-right: 500px;
+    padding-left: 500px;
+    padding-right: 500px;
 }
 
 ul {
@@ -42,14 +42,9 @@ ul {
     margin-right: 500px;
 }
 
-h2.text-center {
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
 img.img-fluid {
-    margin-right: 100px;
-    margin-left: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 p.p-img {
@@ -63,8 +58,8 @@ p.p-img {
 .footer {
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 500px;
-    margin-right: 500px;
+    padding-left: 500px;
+    padding-right: 500px;
 }
 
 li {
