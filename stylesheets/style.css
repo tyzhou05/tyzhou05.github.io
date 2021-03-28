@@ -1,240 +1,71 @@
 
-/*==========================
-BASIC STRUCTURE
-==========================*/
-#wrapper {
-
-	width: 960px;
-	padding: 5px;
-	margin: auto;
-}
-#header {
-	height:100px;
-}
-/*
-#sidebar {
-	width: 300px;
-}
-*/
-#content {
-	float: center;
-	width: 1200px;
-	max-width: 1012px;
-  /*margin-right: auto;
-  margin-left: auto;*/
-}
-#footer {
-	clear: both;
-}
-/*================================================
-COLORS AND FONTS
-color.adobe.com
-
-#7A91B2
-#87B8FF
-#D1E4FF
-#B29C6E
-#FFEFD1
-================================================*/
-
-a {
-	text-decoration: none;
-	color: #06c;
-}
-
-a:hover {
-	background-color: #C6E9FF;
-}
-
-	/*#C6E9FF;*/
-
-nav {
-	margin: auto;
-	height: 70px;
-	float: center;
-	width: 960px;
-	padding: 5px;
-	border-bottom: 2px solid grey;
-	margin-bottom: 0;
-	list-style-type: none;
-}
-
-a.nav-a {
-
-}
-
-ul.nav-ul {
-	/*
-	margin: 0px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 0px;
-	*/
-	text-align: center;
-}
-
-li.link {
-	margin: 10px;
-	font-size: 20px;
-	display: inline;
-	text-align: center;
+li.nav-item {
+    font-size: 20px;
 }
 
 body {
-	/*font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
-	/*font-family: 'Actor'; font-size = 24px;*/
-	color: #24292e;
-	background-color: #F0DEA3;
-	margin: auto;
-	/*line-height: 1.5;*/
-
-	/*text color ^ */
-	/*background-color: #B29C6E;*/
-	/*background-image: url("../images/background.jpg");*/
-
-	/*can change later*/
+    
 }
 
-h1 {
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	border-bottom: 3px solid black;
-	box-sizing: border-box;
-	font-size: 36px;
-	margin-bottom: 0;
-	margin-top: 0;
-	line-height: 2;
+p.text-left {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
-h2 {
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-size: 24px;
-	border-bottom: 1px solid grey;
-	border-bottom-width: thin;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: 30;
-	line-height: 2.0;
+h2.text-center {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
-h3 {
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-size: 20px;
-	margin-top: 10px;
-	margin-bottom: 0px;
+h3.text-left {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
-h4 {
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-size: 16px;
-	line-height: 0.01;
-	margin-top: 10px;
-	margin-bottom: 10px;
+h4.text-left {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
-p {
-	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 16px;
-	line-height: 1.4;
+ul {
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
-ul.circle-ul {
-	list-style-type: circle;
-	margin-right: -2em;
-	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 24px;
-	line-height: 1.5;
+h2.text-center {
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-li.nested-li {
-	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
+img.img-fluid {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+p.p-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+}
+
+.footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
 li {
-	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-}
-
-img.one {
-	max-width: auto;
-	height: auto;
-}
-
-
-#sidebar, #content, #footer {
-
-	/*background-color: #FFEFD1;*/
-	/*background-color:rgba(255,239,209,0.20);*/
-	/*margin-bottom: 4px;*/
-	/*
-	border: double;
-	border-radius: 8px;
-	border-color: grey;
-
-	padding-left: 4px;
-	padding-right: 4px;
-	*/
-}
-
-#content {
-
-}
-
-
-/*=========================================
-RESPONSIVE DESIGN
-=========================================*/
-
-@media screen and (max-width: 980px) {
-	#wrapper {
-		width : 94%;
-	}
-	#content {
-		width : 65%;
-	}
-	#sidebar {
-		width: 30%;
-	}
-}
-@media screen and (max-width: 700px) {
-	#content, #sidebar {
-		width: auto;
-		float: none;
-	}
-	#header {
-		height: auto;
-	}
-}
-@media screen and (max-width: 480px) {
-	#h1 {
-		font-size: 24px;
-	}
-
-}
-/*=========================================
-Phones
-=========================================*/
-
-@media only screen
-	and (min-device-width: 320px)
-	and (max-device-width: 568px) {
-		body {
-			font-size: 40px;
-		}
-		#header {
-			height: auto;
-		}
-		#content {
-			width: auto;
-		}
-		#sidebar {
-			width: auto;
-			clear: both;
-		}
-		#header, #sidebar, #content, #footer {
-			border-radius: 16px;
-			border-width: 8px;
-		}
+    margin-left: none;
 }

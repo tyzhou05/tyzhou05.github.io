@@ -1,42 +1,60 @@
-<!DOCTYPE html>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-<html>
-<div id = "wrapper">
-<head>
-	<header>
-		<nav>
-			<ul class = "nav-ul">
-				<li class = "link">
-					<a href = "./index.html" class = "nav-a">Home</a>
-				</li>
-				<li class = "link">
-					<a href = "./thingsivedone.html" class = "nav-a">Things I've Done</a>
-				</li>
-				<li class = "link">
-					<a href = "./thingsimdoing.html" class = "nav-a">Things I'm Doing</a>
-				</li>
-				<li class = "link">
-					<a href = "./hobbies.html" class = "nav-a">Hobbies</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<title>Tony's Website - Things I've Done</title>
-</head>
-<body>
-	<!--wrapper-->
-		<!--header-->
-		<div id="header">
-			<h1>Tony's Website - Things I've Done</h1>
-		</div>
-		<!--header end-->
-		<!--content-->
-		<div id="content">
-			<div id = "things-ive-done">
-			<h2>Some Things I've Done</h2>
-				<h3>Chess</h3>
-					<p>
+<!doctype html>
+<html lang="en">
+  <div class = "all">
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Bootstrap Testing</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-center">
+          <!--
+          <a class="navbar-brand justify-content-center" href="#">Navbar</a>
+          -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <!--
+            <img src = "images/pfp.jpeg" class="img-fluid rounded-circle" alt="Responsive image" width = "200" height = "200"></img>
+            -->
+            <ul class="navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href= "./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./thingsivedone.html">Things I've Done</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./thingsimdoing.html">Things I'm Doing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./hobbies.html">Hobbies</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Me
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<li><a class="dropdown-item" href="./profiles.html">Profiles</a></li>
+					<li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+	  </nav>
+	  
+	  	<h2 class = "text-center">Some Things I've Done</h2>
+				<h3 class = "text-left">Chess</h3>
+					<p class = "text-left">
 						Played competitively since 6th Grade, competed in over 120 tournaments rated by the United States Chess Federation(<a href = "https://new.uschess.org/about"
 						target = _blank>USCF</a>) mostly throughout the Bay Area. By spending most of my weekends since sixth grade playing in chess tournaments,
 						it’s helped me improving my critical thinking abilities tremendously. Since chess is a mind sport, it’s also helped me develop valuable problem solving and planning
@@ -44,16 +62,14 @@
 						tournaments recently, which sadly are nowhere near the quality of over-the-board tournaments, and I practice daily on chess sites like <a href = "https://lichess.org/"
 						target = _blank>lichess</a>.
 					</p>
-					<ul class = "standard-ul">
+					<ul>
 						<li> My USChess <a href = "http://www.uschess.org/msa/MbrDtlMain.php?16147444" target = "_blank"> Member Page</a></li>
-						<ul class = "circle-ul">
-							<li class = "nested-li">2nd Category Title</li>
-							<li class = "nested-li">Three 1st Category Norms</li>
-							<li class = "nested-li">Peak Standard Rating: 1816</li>
-						</ul>
+						<li>2nd Category Title</li>
+						<li>Three 1st Category Norms</li>
+						<li>Peak Standard Rating: 1816</li>
 					</ul>
 
-					<h4>Notable Achievements(not very impressive):</h4>
+					<h4 class = "text-left">Notable Achievements(not very impressive):</h4>
 					<ul>
 						<li>2018 CalChess Grade 8 State <a href = "http://www.uschess.org/msa/XtblMain.php?201812094632.4-16147444" target = "_blank">Champion</a></li>
 						<li>2018 California Class Warfare Championship AB Section <a href = "http://www.uschess.org/msa/XtblMain.php?201811256982.3-16147444" target = "_blank">1st Place</a></li>
@@ -65,44 +81,36 @@
 					-->
 					</ul>
 
-				<h3>BlueStamp Engineering</h3>
-					<ul>
-						<li><a href = "https://bluestampengineering.com/student-projects/tony-z/" target = "_blank">My BlueStamp 2020 Project Website</a></li>
-					</ul>
-					<p>
+				<h3 class = "text-left">BlueStamp Engineering</h3>
+					<p class = "text-left">
 						Engineering summer program I did summer of Freshman year online. In three weeks, I was able to create a Fingerprint ID Safe with a Keypad over the course of 3 weeks,
 						operated by an Arduino, arduino code, circuitry, a keypad, a fingerprint scanner, and hot glue. I was able to learn a lot about Arduino circuitry, coding, and
 						the basics of engineering, during the global pandemic. It was a great experience to learn and have practice with engineering, and I'd highly recommend it for any high
 						schoolers interested.
 					</p>
+					<ul>
+						<li><a href = "https://bluestampengineering.com/student-projects/tony-z/" target = "_blank">My BlueStamp 2020 Project Website</a></li>
+					</ul>
 
-				<h3>White Stag Monterey</h3>
-					<p>
+				<h3 class = "text-left">White Stag Monterey</h3>
+					<p class = "text-left">
 						Volunteered and helped to plan out and lead 10-12 year olds at a leadership-themed, outdoor summer camp at <a href = "https://whitestagmonterey.com" target = _blank>
 						White Stag Monterey</a>; met for a weekend each month during the school year to plan out two weeks of a summer camp in Piney Creek, CA.
 						This was a great experience I did during my freshman year which helped me get hands-on leadership experience and I had tons of fun while doing so!
 					</p>
-			</div>
-		</div>
-		<!--content end-->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-		<!--sidebar
-		<div id="sidebar">
-			<h2>Navigation</h2>
-			<p><a href="index.html"><img src="images/home.png" height="50"></a></p>
-			<p><a>Link 2</a></p>
-			<p><a>Link 3</a></p>
-		</div>-->
-		<!--
-		<img class = "one" src = "images/steaktaco.jpg" width = "500" height = "350"></img>
-	-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-		<!--footer-->
-		<div id="footer">
-			<p>&copy; Tony Zhou 2021</p>
-		</div>
-		<!--footer end-->
-	</div>
-	<!--wrapper end-->
-</body>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</div>
+<div class = "footer">
+  <p>&copy; Tony Zhou 2021</p>
+</div>
 </html>

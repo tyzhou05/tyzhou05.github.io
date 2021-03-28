@@ -1,48 +1,68 @@
-<!DOCTYPE html>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-<html>
-<div id="wrapper">
-<head>
-	<header>
-		<nav>
-			<ul class = "nav-ul">
-				<li class = "link">
-					<a href = "./index.html" class = "nav-a">Home</a>
-				</li>
-				<li class = "link">
-					<a href = "./thingsivedone.html" class = "nav-a">Things I've Done</a>
-				</li>
-				<li class = "link">
-					<a href = "./thingsimdoing.html" class = "nav-a">Things I'm Doing</a>
-				</li>
-				<li class = "link">
-					<a href = "./hobbies.html" class = "nav-a">Hobbies</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<title>Tony's Website - Hobbies</title>
-</head>
-<body>
-	<!--wrapper-->
-		<!--header-->
-		<div id="header">
-			<h1>Tony's Website - Hobbies</h1>
-		</div>
-		<!--header end-->
-		<!--content-->
-		<div id="content">
-			<div id = "hobbies">
-			<h2>Some of My Hobbies</h2>
-					<h3>Cooking</h3>
-						<p>Since quarantine, I've picked up cooking as a hobby. I still remember back in April, when I was browsing YouTube, I came upon a <a href = "https://www.youtube.com/watch?v=3oTFE6FAIrwv"
+<!doctype html>
+<html lang="en">
+  <div class = "all">
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Bootstrap Testing</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-center">
+          <!--
+          <a class="navbar-brand justify-content-center" href="#">Navbar</a>
+          -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <!--
+            <img src = "images/pfp.jpeg" class="img-fluid rounded-circle" alt="Responsive image" width = "200" height = "200"></img>
+            -->
+            <ul class="navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href= "./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./thingsivedone.html">Things I've Done</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./thingsimdoing.html">Things I'm Doing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./hobbies.html">Hobbies</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Me
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<li><a class="dropdown-item" href="./profiles.html">Profiles</a></li>
+                  <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+	  </nav>
+	  
+	  <h2 class = "text-center">Some of My Hobbies</h2>
+					<h3 class = "text-left">Cooking</h3>
+						<p class = "text-left">Since quarantine, I've picked up cooking as a hobby. I still remember back in April, when I was browsing YouTube, I came upon a <a href = "https://www.youtube.com/watch?v=3oTFE6FAIrwv"
 						 	target = _blank>video</a> by J. Kenji Lopez-Alt, where he made a French omelette in under two minutes! I was then inspired to try making one myself,
 							and during my first attempt, I remember failing and making scrambled eggs instead.
 							Since then, I've improved my cooking skills vastly. Thanks to the help of YouTube, I've been able to learn how to cook so I won't have to
-							rely solely on instant ramen when I go to college! My favorite dishes to cook are pastas(bolognese and pomodoro are my favorites), steak, and breakfast burritos/tacos!
+							rely solely on instant ramen when I go to college! My favorite dishes to cook are pastas(bolognese and pomodoro).
 							I've been able to(decently) cook more dishes such as oyakodon, tonkatsu, chicken katsu, burgers, Japanese curry, omelettes, fried rice, matcha lattes, avocado toast, and much more!
-							I's been a valuable life skill that I've been able to develop and will cherish for the rest of my life!
+							It's been a valuable life skill that I've been able to develop and will cherish for the rest of my life.
+						</p>
+						<p class = "text-left">
 							Here are some YouTubers I watch and look for inspiration in when cooking either for myself or my family:
 						</p>
 						<ul>
@@ -50,38 +70,39 @@
 							<li class = "standard-li"><a href = "https://www.youtube.com/user/bgfilms" target = "_blank">Binging With Babish</a></li>
 							<li class = "standard-li"><a href = "https://www.youtube.com/user/aragusea" target = "_blank">Adam Ragusea</a></li>
 						</ul>
-						<p>Pictures coming soon!</p>
-						<h3>Running</h3>
-						<p>Also since quarantine, partially as a result of the hobby above and the staleness of everything being online, I've also been gaining some weight. To counteract this,
+						<img src = "images/steak.jpg" class="img-responsive center-block d-block mx-auto" alt="Responsive image" width: 100% \9; height = "500"></img>
+        <p class = "p-img">Steak seasoned with salt and pepper, pan-seared and butter basted</p>
+
+        <img src = "images/steaktaco.jpg" class="img-responsive center-block d-block mx-auto" alt="Responsive image" width: 100% \9; height = "500"></img>
+        <p class = "p-img">Steak taco - flour tortilla, pan-seared steak, avocado, red onions, cheese</p>
+        
+
+        <img src = "images/bolognese.jpg" class="img-responsive center-block d-block mx-auto" alt="Responsive image" width: 100% \9; height = "500"></img>
+		<p class = "p-img">Bolognese pasta - ground beef, carrots, onions, tomato sauce, cream, parmigiano reggiano</p>
+		
+						<h3 class = "text-left">Running</h3>
+						<p class = "text-left">Also since quarantine, partially as a result of the hobby above and the staleness of everything being online, I've also been gaining some weight. To counteract this,
 							 I've gotten into exercising on the treadmill! As of right now, I try to run 2 miles, first half a mile at 3mph, and the rest at 5mph, with water breaks every half mile.
-							 I typically try to run every 1-2 days, or when my schedule permits, and it's something I'm hoping to continue throughout my life to stay fit!
+							 I typically try to run every 1-2 days, or when my schedule permits, and it's something I'm hoping to continue throughout my life to stay fit.
 						</p>
 
-						<h3>The Stock Market</h3>
-						<p>Also since a few months ago(January 2021), I've been interested in the stock market as well, mostly because of what's been happening with GameStop. In my free time,
-							 it's been very fun and worthwhile to learn about financial terms and processes, investing, and the stock market in general! I've also begun doing my own research
-						   on stocks and investing some of my savings as well.</p>
-				</div>
-		</div>
-		<!--content end-->
+						<h3 class = "text-left">The Stock Market</h3>
+						<p class = "text-left">Also since a few months ago(January 2021), I've been interested in the stock market as well, mostly because of what's been happening with GameStop. In my free time,
+							 it's been very fun and worthwhile to learn about financial terms and processes, investing, and the stock market in general! </p>
 
-		<!--sidebar
-		<div id="sidebar">
-			<h2>Navigation</h2>
-			<p><a href="index.html"><img src="images/home.png" height="50"></a></p>
-			<p><a>Link 2</a></p>
-			<p><a>Link 3</a></p>
-		</div>-->
-		<!--
-		<img class = "one" src = "images/steaktaco.jpg" width = "500" height = "350"></img>
-	-->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-		<!--footer-->
-		<div id="footer">
-			<p>&copy; Tony Zhou 2021</p>
-		</div>
-		<!--footer end-->
-	</div>
-	<!--wrapper end-->
-</body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</div>
+<div class = "footer">
+  <p>&copy; Tony Zhou 2021</p>
+</div>
 </html>
