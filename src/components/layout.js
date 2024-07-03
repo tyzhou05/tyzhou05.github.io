@@ -3,6 +3,8 @@
  * with Gatsby's useStaticQuery component
  *
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
+ * 
+ * <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
  */
 
 import * as React from "react"
@@ -24,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header siteTitle/>
       <div
         style={{
           margin: `0 auto`,

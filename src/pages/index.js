@@ -1,11 +1,12 @@
+
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
+/*
 const links = [
   {
     text: "Tutorial",
@@ -32,6 +33,7 @@ const links = [
       "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
   },
 ]
+*/
 
 const samplePageLinks = [
   {
@@ -47,31 +49,19 @@ const samplePageLinks = [
 ]
 
 const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
+  
   {
     text: "Starters",
     url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
+  }
 ]
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
+    <div className={styles.intro}>
+      {/*
       <StaticImage
         src="../images/example.png"
         loading="eager"
@@ -80,10 +70,12 @@ const IndexPage = () => (
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
-      />
+      />*/}
       <h1>
-        Welcome to <b>Gatsby!</b>
+        Hi! <span>&#128075;</span>
       </h1>
+
+      {/*}
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
@@ -95,7 +87,32 @@ const IndexPage = () => (
         <br />
         Edit <code>src/pages/index.js</code> to update this page.
       </p>
+      */}
     </div>
+
+
+    <div className = {styles.IndexPage}>
+      <p>
+       I'm Tony, currently an undergraduate studying computer science at the  University of Washington, 
+       but originally from sunny San Jose, California. I'm interested in human-computer interaction, 
+       augmented reality, and social computing research.
+      </p>
+
+      <p>
+        At UW, I'm a currently a researcher at the  Makeability Lab, where I'm developing a holographic 
+        running assistant with the Apple Vision Pro mentored by Jaewook Lee. I'm also building path planning 
+        models for our first-ever fully autonomous racecar with  UW Formula, and work part-time at the  Crags 
+        Climbing Center in the IMA. 
+      </p>
+
+      <p>
+        Before UW, I previously sent a few experiments to the ISS and did some research in CubeSats, 
+        computational biology, and tissue engineering at  NASA Ames,  MIT Lincoln Laboratory, and Stanford Med, 
+        where I once wished I could become an astronaut.
+      </p>
+    </div>
+
+    {/*
     <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
@@ -114,15 +131,19 @@ const IndexPage = () => (
         <a href={`${link.url}${utmParameters}`}>{link.text}</a>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
-    ))}
+    ))}*/}
   </Layout>
 )
+
 
 /**
  * Head export to define metadata for the page
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+ *  export const Head = () => <Seo title="Home" />
+ * 
  */
-export const Head = () => <Seo title="Home" />
+
+
 
 export default IndexPage
