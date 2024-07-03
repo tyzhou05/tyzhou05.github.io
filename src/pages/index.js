@@ -97,8 +97,8 @@ const IndexPage = () => (
         the University of Washington, but originally from sunny San Jose, California. 
         
         I'm broadly interested in human-computer interaction: can we use 
-        mixed-modal methods in augmented reality to create futuristic technology? 
-        How should we preserve creative freedom in design and art as computer scientists?
+        mixed-modal methods in augmented reality to enable futuristic technology? 
+        How should we preserve creative freedom in design and art as computer scientists? 
       </p>
 
       <p>
@@ -110,8 +110,8 @@ const IndexPage = () => (
 
       <p>
         Before UW, I previously sent a few experiments to the ISS, built a satellite, researched 
-        computational biology, and played chess competitively, where I once wished I could become
-        a grandmaster and astronaut.
+        computational biology, and played chess competitively, where I once thought I was going
+        to be a grandmaster, astronaut, or aerospace engineer.
       </p>
 
       <p>
