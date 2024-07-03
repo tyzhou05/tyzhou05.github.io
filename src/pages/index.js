@@ -134,7 +134,7 @@ const IndexPage = () => (
           LinkedIn: <a href = "https://www.linkedin.com/in/tyzhou">tyzhou</a> 
         </li>
         <li>
-          GitHub: <a href = "mailto:tyzhou05@uw.edu">tyzhou05@uw.edu</a> 
+          GitHub: <a href = "https://www.github.com/tyzhou05">tyzhou05</a> 
         </li>
         <li>
           Publications: <a href = "https://scholar.google.com/citations?user=S4zK_nsAAAAJ&hl=en">Google Scholar</a>
