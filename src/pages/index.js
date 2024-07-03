@@ -141,6 +141,8 @@ const IndexPage = () => (
         </li>
       </ul>
     </div>
+    
+    <hr></hr>
 
     {/*
     <ul className={styles.list}>

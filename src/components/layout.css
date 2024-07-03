@@ -138,6 +138,7 @@ ol {
   margin-left: var(--space-4);
   list-style-position: outside;
   list-style-image: none;
+  margin-bottom: var(--space-4);
 }
 pre {
   margin-left: 0;
