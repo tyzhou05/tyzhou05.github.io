@@ -1,6 +1,9 @@
-<h3>
-My personal webpage. To run:
-</h3>
+<h2>
+tyzhou.com
+</h2>
+
+<ins>
+</ins>
 
 ```
 npm install -g gatsby-cli
