@@ -72,7 +72,7 @@ const IndexPage = () => (
         style={{ marginBottom: `var(--space-3)` }}
       />*/}
       <h1>
-        Hi! <span>&#128075;</span>
+        Hello! <span>&#128075;</span>
       </h1>
 
       {/*}
@@ -93,23 +93,53 @@ const IndexPage = () => (
 
     <div className = {styles.IndexPage}>
       <p>
-       I'm Tony, currently an undergraduate studying computer science at the  University of Washington, 
-       but originally from sunny San Jose, California. I'm interested in human-computer interaction, 
-       augmented reality, and social computing research.
+        I'm Tony, currently a sophomore studying <a href = "https://www.cs.washington.edu">computer science</a> at 
+        the University of Washington, but originally from sunny San Jose, California. 
+        
+        I'm broadly interested in human-computer interaction: can we use 
+        mixed-modal methods in augmented reality to create futuristic technology? 
+        How should we preserve creative freedom in design and art as computer scientists?
       </p>
 
       <p>
-        At UW, I'm a currently a researcher at the  Makeability Lab, where I'm developing a holographic 
-        running assistant with the Apple Vision Pro mentored by Jaewook Lee. I'm also building path planning 
-        models for our first-ever fully autonomous racecar with  UW Formula, and work part-time at the  Crags 
-        Climbing Center in the IMA. 
+        At UW, I'm tackling questions like these at the <a href = "https://makeabilitylab.cs.washington.edu">Makeability Lab</a>, 
+        where I'm developing a holographic running assistant with the Apple Vision Pro mentored by <a href = "https://jaewook-lee.com/">Jaewook Lee</a>. I'm also building path planning 
+        models for our first-ever fully autonomous racecar with <a href = "https://www.uwformulamotorsports.com/">UW Formula Motorsports</a>, 
+        and work part-time at the <a href = "https://www.washington.edu/ima/uwild/climb-with-rec/climbing-spaces/crags-climbing-center/">UW Crags Climbing Center</a> in the IMA. 
       </p>
 
       <p>
-        Before UW, I previously sent a few experiments to the ISS and did some research in CubeSats, 
-        computational biology, and tissue engineering at  NASA Ames,  MIT Lincoln Laboratory, and Stanford Med, 
-        where I once wished I could become an astronaut.
+        Before UW, I previously sent a few experiments to the ISS, built a satellite, researched 
+        computational biology, and played chess competitively, where I once wished I could become
+        a grandmaster and astronaut.
       </p>
+
+      <p>
+        In my free time, I like to try new coffee shops in the U-District, climb plastic rocks at 
+        Seattle Bouldering Project, cook pastas, curate my Spotify playlists, and collect bucket hats.
+      </p>
+
+      <p>
+        I'm always down to chat -- feel free to reach out! 
+      </p>
+
+      <h3>
+      Links: 
+      </h3>
+      <ul>
+        <li>
+          Email: <a href = "mailto:tyzhou05@uw.edu">tyzhou05@uw.edu</a> 
+        </li>
+        <li>
+          LinkedIn: <a href = "https://www.linkedin.com/in/tyzhou">tyzhou</a> 
+        </li>
+        <li>
+          GitHub: <a href = "mailto:tyzhou05@uw.edu">tyzhou05@uw.edu</a> 
+        </li>
+        <li>
+          Publications: <a href = "https://scholar.google.com/citations?user=S4zK_nsAAAAJ&hl=en">Google Scholar</a>
+        </li>
+      </ul>
     </div>
 
     {/*
