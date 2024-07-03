@@ -134,6 +134,7 @@ p {
 
 ul,
 ol {
+  margin-top: var(--space-2);
   margin-left: var(--space-4);
   list-style-position: outside;
   list-style-image: none;
@@ -167,7 +168,7 @@ ul li {
 }
 
 h3 {
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 li > ol,
