@@ -97,7 +97,7 @@ const IndexPage = () => (
         the University of Washington, but originally from sunny San Jose, California. 
         
         I'm broadly interested in human-computer interaction: can we use 
-        mixed-modal methods in augmented reality to enable futuristic technology? 
+        multi-modal methods in augmented reality to enable futuristic technology? 
         How should we preserve creative freedom in design and art as computer scientists? 
       </p>
 
