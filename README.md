@@ -7,7 +7,9 @@ tyzhou.com
 
 ```
 npm install -g gatsby-cli
-npm run build
+
 npm run develop
+
+npm run build
 npm run deploy
 ```
