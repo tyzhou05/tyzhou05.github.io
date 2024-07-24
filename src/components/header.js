@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
     >
       {siteTitle}
     </Link>
-    <a href = "https://washington.edu">
+    <a href = "https://uw.edu">
     <img
       alt="UW Logo"
       height={25}

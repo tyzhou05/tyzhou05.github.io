@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 /*
 const links = [
@@ -61,7 +62,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <div className={styles.intro}>
-      {/*
+      {
       <StaticImage
         src="../images/example.png"
         loading="eager"
@@ -70,7 +71,7 @@ const IndexPage = () => (
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
-      />*/}
+      />}
       <h1>
         Hello! <span>&#128075;</span>
       </h1>
@@ -93,12 +94,11 @@ const IndexPage = () => (
 
     <div className = {styles.IndexPage}>
       <p>
-        I'm Tony, currently a sophomore studying <a href = "https://www.cs.washington.edu">computer science</a> at 
+        I'm Tony, currently an undergraduate studying <a href = "https://www.cs.washington.edu">computer science</a> at 
         the University of Washington, but originally from sunny San Jose, California. 
         
         I'm broadly interested in human-computer interaction: can we use 
         multi-modal methods in augmented reality to enable futuristic technology? 
-        How should we preserve creative freedom in design and art as computer scientists? 
       </p>
 
       <p>
@@ -120,7 +120,7 @@ const IndexPage = () => (
       </p>
 
       <p>
-        I'm always down to chat -- feel free to reach out! 
+        I'm always down to chat. Feel free to reach out! 
       </p>
 
       <h3>

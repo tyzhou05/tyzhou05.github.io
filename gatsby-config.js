@@ -15,7 +15,7 @@ module.exports = {
   }
 }
 
-/*,
+
   plugins: [
     `gatsby-plugin-image`,
     {
@@ -26,6 +26,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    'gatsby-transformer-remark',
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -41,4 +42,4 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-  ], */
+  ]
