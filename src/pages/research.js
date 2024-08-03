@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import css from "./index.css"
+import * as styles from "../components/index.module.css"
 
 const Research = () => (
   <Layout>
@@ -10,7 +12,9 @@ const Research = () => (
         <a href='/'>Home</a>
         <a className="currentPage" href="/research">Research</a>
     </div>
-    <h1>To be updated 👨🏻‍💻</h1>
+    <div>
+      <h1>To be updated 👨🏻‍💻</h1>
+    </div>
     <p></p>
     <hr></hr>
   </Layout>

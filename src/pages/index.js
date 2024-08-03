@@ -8,29 +8,6 @@ import * as styles from "../components/index.module.css"
 import css from "./index.css"
 import { StaticImage } from "gatsby-plugin-image"
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
-
-const moreLinks = [
-  
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  }
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
-
 const IndexPage = () => (
   <Layout>
     <div className = "navbar">
