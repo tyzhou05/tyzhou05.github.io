@@ -103,15 +103,16 @@ const IndexPage = () => (
 
       <p>
         At UW, I'm tackling questions like these at the <a href = "https://makeabilitylab.cs.washington.edu">Makeability Lab</a>, 
-        where I'm developing a holographic running assistant with the Apple Vision Pro mentored by <a href = "https://jaewook-lee.com/">Jaewook Lee</a>. I'm also building path planning 
-        models for our first-ever fully autonomous racecar with <a href = "https://www.uwformulamotorsports.com/">UW Formula Motorsports</a>, 
+        where I'm developing a holographic running assistant with the Apple Vision Pro mentored by <a href = "https://jaewook-lee.com/">Jaewook Lee</a>. 
+        
+        I'm also building driverless software for our first-ever fully autonomous racecar with <a href = "https://www.uwformulamotorsports.com/">UW Formula Motorsports</a>, 
         and work part-time at the <a href = "https://www.washington.edu/ima/uwild/climb-with-rec/climbing-spaces/crags-climbing-center/">UW Crags Climbing Center</a> in the IMA. 
       </p>
 
       <p>
-        Before UW, I previously sent a few experiments to the ISS, built a satellite, researched 
+        Before UW, I previously sent a few experiments to the ISS, built a CubeSat, researched 
         computational biology, and played chess competitively, where I once thought I was going
-        to be a grandmaster, astronaut, or aerospace engineer.
+        to be a national master, astronaut, or aerospace engineer.
       </p>
 
       <p>
