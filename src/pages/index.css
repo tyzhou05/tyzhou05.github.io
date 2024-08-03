@@ -1,0 +1,16 @@
+.navbar {
+    margin: 2em 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+  }
+  
+.pfp {
+    margin-right: 2.5em;
+}
+
+.currentPage {
+    text-decoration: solid underline 1.5px;
+    text-underline-offset: 2.5px;
+}
