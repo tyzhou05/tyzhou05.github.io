@@ -12,9 +12,7 @@ module.exports = {
     description: `My personal webpage`,
     author: `@tyzhou`,
     siteUrl: `https://tyzhou.com`,
-  }
-}
-
+  },
 
   plugins: [
     `gatsby-plugin-image`,
@@ -43,3 +41,4 @@ module.exports = {
       },
     },
   ]
+}

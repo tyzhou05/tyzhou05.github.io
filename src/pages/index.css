@@ -5,6 +5,12 @@
     justify-content: flex-end;
     gap: 1em;
   }
+
+.border {
+    display: flex;
+    margin-bottom: 2em;
+    align-items: center;
+}
   
 .pfp {
     margin-right: 2.5em;

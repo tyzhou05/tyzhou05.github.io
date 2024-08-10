@@ -15,17 +15,19 @@ const IndexPage = () => (
           <a href="/research">Research</a>
     </div>
     <div>
-      <div class = "pfp">
-        <StaticImage
-          className="bio-avatar"
-          layout="fixed"
-          src="../images/tony.jpg"
-          width={64}
-          height={64}
-          quality={95}
-          formats={["auto", "webp", "avif"]}
-          alt="Tony Zhou"
-        />
+      <div className = "border">
+        <div>
+            <StaticImage
+              src="../images/tony.jpg"
+              alt="Tony Zhou"
+              layout="fixed"
+              width={64}
+              height={64}
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              placeholder="blurred"
+            />
+          </div>
       </div>
       <h1>
         Hello! 👋🏻
