@@ -15,18 +15,24 @@ const IndexPage = () => (
           <a href="/research">Research</a>
     </div>
     <div>
-      <div className = "border">
-        <div>
+      <div class = "header">
+        <div class = "pfp" >
             <StaticImage
               src="../images/tony.jpg"
               alt="Tony Zhou"
               layout="fixed"
-              width={64}
-              height={64}
-              quality={95}
+              width={128}
+              height={128}
+              quality={100}
               formats={["auto", "webp", "avif"]}
               placeholder="blurred"
+              imgStyle={{ 
+                borderRadius: '80%', 
+              }}
             />
+          </div>
+          <div class = "leftAlign">
+              
           </div>
       </div>
       <h1>
