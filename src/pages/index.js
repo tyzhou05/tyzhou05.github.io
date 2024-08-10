@@ -16,8 +16,9 @@ const IndexPage = () => (
     </div>
     <div>
       <div class = "header">
-        <div class = "pfp" >
+        <div>
             <StaticImage
+              className = "pfp"
               src="../images/tony.jpg"
               alt="Tony Zhou"
               layout="fixed"
@@ -26,9 +27,6 @@ const IndexPage = () => (
               quality={100}
               formats={["auto", "webp", "avif"]}
               placeholder="blurred"
-              imgStyle={{ 
-                borderRadius: '80%', 
-              }}
             />
           </div>
           <div class = "leftAlign">
