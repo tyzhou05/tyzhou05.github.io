@@ -15,18 +15,37 @@ const Research = () => (
     <div>
       <h1>Research 👨🏻‍💻</h1>
       <p> 
-        I'm broadly interested in human-computer interaction, including topics in design, visualization, and AR/VR. 
+        I'm interested in human-computer interaction (HCI), including topics in
+        design, translational science, and visualization.
       </p>
       <p>
-        For the past year, I've been working at the <a href = "https://makeabilitylab.cs.washington.edu">Makeability Lab</a>, 
-        where I'm developing a holographic running assistant with the Apple Vision Pro mentored by <a href = "https://jaewook-lee.com/">Jaewook Lee</a>.
-        This summer, I'm also collaborating with <a href = "https://chrisfudesign.com">Chris Fu</a>.
+        This past summer I've worked with <a href = "https://chrisfudesign.com">Chris (Yue) Fu</a> investigating 
+        mixed-initiative creativity for designers.
+        I'm also working with <a href = "https://donghoon.io">Donghoon Shin</a> and <a href = "https://faculty.uw.edu/garyhs">
+        Prof. Gary Hsieh</a> on a project for implementation science and design.
       </p>
 
       <p>
-        My first research experiences were in high school, where I was lucky enough to do data analysis for lab-engineered
+        I'm always grateful for my first research experiences, where I worked on data analysis for engineered
         muscle cells in a <a href = "https://med.stanford.edu/huanglab.html">tissue engineering lab</a> at 
         Stanford Med.
+      </p>
+
+      <h3>
+        Publications:
+      </h3>
+
+      <p>
+        [Under Review] &nbsp; Yue Fu, Han Bin, <b>Tony Zhou</b>, Marx Wang, Yixin Chen, Zelia Gomes Da Costa Lai, Jacob O.
+        Wobbrock, and Alexis Hiniker. 2024. <i>Creativity in the Age of AI: Evaluating the Impact of Generative 
+          AI on Design Outputs and Designers’ Creative Thinking. </i>
+      </p>
+
+      <p>
+        [Journal] &nbsp; Alex Ho Pang Chan, Ishita Jain, Beu P. Oropeza, <b>Tony Zhou</b>, Brandon Nelsen, Nicholas A.
+        Geisse, and Ngan F. Huang. 2023. <i>Combinatorial Extracellular Matrix Cues with
+        Mechanical Strain Induce Differential Effects on Myogenesis in Vitro. </i>Biomaterials Science,
+        Vol. 11, no. 17, pp 5893–5907. <a href = "https://doi.org/10.1039/D3BM00448A">https://doi.org/10.1039/D3BM00448A</a>
       </p>
 
       <div>
