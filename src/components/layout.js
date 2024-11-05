@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          Last updated September {new Date().getFullYear()}.
+          Last updated November {new Date().getFullYear()}.
         </footer>
       </div>
     </>

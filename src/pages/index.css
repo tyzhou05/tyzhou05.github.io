@@ -7,15 +7,6 @@
     gap: 1em;
   }
 
-  .anek-devanagari-fontStyle {
-    font-family: "Anek Devanagari", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  
 .header {
     display: flex;
     margin-top: 2em;
@@ -33,6 +24,25 @@
 .pfp {
     margin-right: 1em;
     border-radius: 24%;
+}
+
+.research {
+    margin: 0 0 0 0;
+    display: flex;
+}
+
+img {
+    float: left;
+}
+
+.publication {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.banner {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .currentPage {

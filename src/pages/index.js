@@ -14,8 +14,22 @@ const IndexPage = () => (
           <a className="currentPage" href='/'>Home</a>
           <a href="/research">Research</a>
     </div>
+
+    <div className = "banner">
+        <StaticImage
+            className = "banner"
+            src="../images/flowers.jpeg"
+            alt="banner"
+            layout="fixed"
+            width={800}
+            height={200}
+            quality={100}
+            formats={["auto", "webp", "avif"]}
+            placeholder="blurred"
+          />
+    </div>
     <div>
-      <div class = "header">
+       {/* <div class = "header">
         <div>
             <StaticImage
               className = "pfp"
@@ -29,10 +43,7 @@ const IndexPage = () => (
               placeholder="blurred"
             />
           </div>
-          <div class = "leftAlign">
-              
-          </div>
-      </div>
+        </div>  */}
       <h1>
         Hello! 👋🏻
       </h1>
@@ -40,7 +51,7 @@ const IndexPage = () => (
 
     <div>
       <p>
-        I'm Tony, currently an undergraduate studying <a href = "https://www.cs.washington.edu">computer science</a> at 
+        I'm Tony, currently a second-year undergraduate studying <a href = "https://www.cs.washington.edu">computer science</a> at 
         the University of Washington, but originally from sunny San Jose, California. 
       </p>
 
@@ -55,8 +66,7 @@ const IndexPage = () => (
       </p>
 
       <p>
-        In my free time, I like to try new coffee shops in the U-District, climb plastic rocks at 
-        Seattle Bouldering Project, cook pastas, and curate my Spotify playlists.
+        In my free time, I like to explore coffee shops around Seattle and try new recipes. 
       </p>
 
       <p>
