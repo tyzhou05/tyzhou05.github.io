@@ -25,7 +25,7 @@ const Research = () => (
         I'm also working with <a href = "https://donghoon.io">Donghoon Shin</a> and <a href = "https://faculty.uw.edu/garyhs">
         Prof. Gary Hsieh</a> on a project for implementation science and design.
 
-        Recently I've also started collaborating with <a href = "https://dingzeyu.li">Dingzeyu Li</a> at Adobe Research and <a href = "https://iamtaolong.github.io">Tao Long</a> at Columbia.
+        Recently I've also started collaborating with <a href = "https://dingzeyu.li">Dingzeyu Li</a> at Adobe Research.
       </p>
 
       <p>
