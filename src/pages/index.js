@@ -12,7 +12,7 @@ const IndexPage = () => (
   <Layout>
     <div className = "navbar">
           <a className="currentPage" href='/'>Home</a>
-          <a href="/research">Research</a>
+          {/* <a href="/research">Research</a> */}
     </div>
 
     <div className = "banner">
@@ -55,10 +55,10 @@ const IndexPage = () => (
         the University of Washington, but originally from sunny San Jose, California. 
       </p>
 
-      <p>
-        At UW, I'm building driverless software for our first-ever fully autonomous racecar with <a href = "https://www.uwformulamotorsports.com/">UW Formula Motorsports</a>, 
+      {/* <p>
+        At UW, I used to build driverless software for our first-ever fully autonomous racecar with <a href = "https://www.uwformulamotorsports.com/">UW Formula Motorsports</a>, 
         and used to work part-time at the <a href = "https://www.washington.edu/ima/uwild/climb-with-rec/climbing-spaces/crags-climbing-center/">UW Crags Climbing Center</a> in the IMA. 
-      </p>
+      </p> */}
 
       <p>
         Before UW, I previously sent a few experiments to the ISS, built a CubeSat, and played chess competitively, where I once thought I was going
@@ -66,7 +66,9 @@ const IndexPage = () => (
       </p>
 
       <p>
-        In my free time, I like to explore coffee shops around Seattle and try new recipes. 
+        In my free time, I like to explore coffee shops around Seattle 
+        (currently very into bagels and iced lavender lattes) 
+        and try new recipes. 
       </p>
 
       <p>
@@ -75,7 +77,7 @@ const IndexPage = () => (
 
       <div>
         <a href = "mailto:tyzhou05@uw.edu">[Email]</a>  &nbsp; 
-        <a href = "https://www.github.com/tyzhou05">[GitHub]</a> &ensp;
+        <a href = "https://www.linkedin.com/in/tyzhou">[LinkedIn]</a> &ensp;
       </div>
     </div>
 

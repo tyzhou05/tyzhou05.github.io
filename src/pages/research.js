@@ -17,25 +17,27 @@ const Research = () => (
       <h1>Research 👨🏻‍💻</h1>
       <p> 
         I'm interested in human-computer interaction (HCI), including topics in
-        design, social computing, and data visualization.
+        evidence-based design and social computing.
       </p>
       <p>
-        This past summer I worked with <a href = "https://chrisfudesign.com">Chris (Yue) Fu</a> investigating 
-        mixed-initiative creativity for designers.
-        I'm also working with <a href = "https://donghoon.io">Donghoon Shin</a> and <a href = "https://faculty.uw.edu/garyhs">
+        I'm currently working with <a href = "https://donghoon.io">Donghoon Shin</a> and <a href = "https://faculty.uw.edu/garyhs">
         Prof. Gary Hsieh</a> on a project for implementation science and design.
 
-        Recently I've also started collaborating with <a href = "https://dingzeyu.li">Dingzeyu Li</a> at Adobe Research.
+        Recently I've also started working with <a href = "https://jaewonkim.me">JaeWon Kim</a> on a broadcast social media platform, 
+        and <a href = "https://dingzeyu.li">Ding Li</a> on challenges in longitudinal co-creation.
+     
+        I also work with <a href = "https://chrisfudesign.com">Chris (Yue) Fu</a> investigating 
+        mixed-initiative creativity for designers.
       </p>
 
-      <p>
+      {/* <p>
         I'm always grateful for my first research experiences, where I did some data analysis for engineered
         muscle cells in a <a href = "https://med.stanford.edu/huanglab.html">tissue engineering lab</a> at 
         Stanford Med.
-      </p>
+      </p> */}
 
       <h3>
-        Publications:
+        Under Review:
       </h3>
 
       <div class = "research">
@@ -50,19 +52,19 @@ const Research = () => (
           placeholder="blurred"
         /> */}
         <p class = "publication">
-          [Under Review] &nbsp; Yue Fu, Han Bin, <b>Tony Zhou</b>, Marx Wang, Yixin Chen, Zelia Gomes Da Costa Lai, Jacob O.
+          [1] &nbsp; Yue Fu, Han Bin, <b>Tony Zhou</b>, Marx Wang, Yixin Chen, Zelia Gomes Da Costa Lai, Jacob O.
           Wobbrock, and Alexis Hiniker. 2024. <i>Creativity in the Age of AI: Evaluating the Impact of Generative 
             AI on Design Outputs and Designers’ Creative Thinking. </i>
         </p>
       </div>
 
       <div class = "research">
-        <p class = "publication">
+        {/* <p class = "publication">
           [Journal] &nbsp; Alex Ho Pang Chan, Ishita Jain, Beu P. Oropeza, <b>Tony Zhou</b>, Brandon Nelsen, Nicholas A.
           Geisse, and Ngan F. Huang. 2023. <i>Combinatorial Extracellular Matrix Cues with
           Mechanical Strain Induce Differential Effects on Myogenesis in Vitro. </i>Biomaterials Science,
           Vol. 11, no. 17, pp 5893–5907. <a href = "https://doi.org/10.1039/D3BM00448A">https://doi.org/10.1039/D3BM00448A</a>
-        </p>
+        </p> */}
       </div>
 
       <div>
