@@ -14,21 +14,6 @@ const Research = () => (
         <a className="currentPage" href="/research">Research</a>
     </div>
     <div>
-      <h1>Research 👨🏻‍💻</h1>
-      <p> 
-        I'm interested in human-computer interaction (HCI), including topics in
-        evidence-based design and social computing.
-      </p>
-      <p>
-        I'm currently working with <a href = "https://donghoon.io">Donghoon Shin</a> and <a href = "https://faculty.uw.edu/garyhs">
-        Prof. Gary Hsieh</a> on a project for implementation science and design.
-
-        Recently I've also started working with <a href = "https://jaewonkim.me">JaeWon Kim</a> on a broadcast social media platform, 
-        and <a href = "https://dingzeyu.li">Ding Li</a> on challenges in longitudinal co-creation.
-     
-        I also work with <a href = "https://chrisfudesign.com">Chris (Yue) Fu</a> investigating 
-        mixed-initiative creativity for designers.
-      </p>
 
       {/* <p>
         I'm always grateful for my first research experiences, where I did some data analysis for engineered
@@ -36,9 +21,9 @@ const Research = () => (
         Stanford Med.
       </p> */}
 
-      <h3>
+      {/* <h3>
         Under Review:
-      </h3>
+      </h3> */}
 
       <div class = "research">
         {/* <StaticImage
@@ -70,6 +55,8 @@ const Research = () => (
       <div>
         <a href = "https://scholar.google.com/citations?user=S4zK_nsAAAAJ&hl=en">[Google Scholar]</a>
       </div>
+
+      
     </div>
     <p></p>
     <hr></hr>

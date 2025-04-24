@@ -45,6 +45,10 @@ img {
     margin-bottom: 2em;
 }
 
+.contact-link .icon {
+    top: 4px;
+}
+
 .currentPage {
     text-decoration: solid underline 1.5px;
     text-underline-offset: 2.5px;

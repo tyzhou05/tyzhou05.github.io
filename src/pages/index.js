@@ -1,6 +1,8 @@
-
 import * as React from "react"
 import { Link } from "gatsby"
+import { MdEmail } from 'react-icons/md';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGraduationCap } from 'react-icons/fa';
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -51,8 +53,7 @@ const IndexPage = () => (
 
     <div>
       <p>
-        I'm Tony, currently a second-year undergraduate studying <a href = "https://www.cs.washington.edu">computer science</a> at 
-        the University of Washington, but originally from sunny San Jose, California. 
+        I'm Tony, currently a second-year undergraduate studying <a href = "https://www.cs.washington.edu">computer science</a> at the University of Washington, but originally from sunny San Jose, California. 
       </p>
 
       {/* <p>
@@ -60,10 +61,10 @@ const IndexPage = () => (
         and used to work part-time at the <a href = "https://www.washington.edu/ima/uwild/climb-with-rec/climbing-spaces/crags-climbing-center/">UW Crags Climbing Center</a> in the IMA. 
       </p> */}
 
-      <p>
+      {/* <p>
         Before UW, I previously sent a few experiments to the ISS, built a CubeSat, and played chess competitively, where I once thought I was going
         to be a national master or an aerospace engineer.
-      </p>
+      </p> */}
 
       <p>
         In my free time, I like to explore coffee shops around Seattle 
@@ -75,9 +76,25 @@ const IndexPage = () => (
         I'm always down to chat. Feel free to reach out! 
       </p>
 
-      <div>
-        <a href = "mailto:tyzhou05@uw.edu">[Email]</a>  &nbsp; 
-        <a href = "https://www.linkedin.com/in/tyzhou">[LinkedIn]</a> &ensp;
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '4px'}}>
+        <div>
+          <a href="mailto:tyzhou05@uw.edu">
+            <MdEmail style={{ marginRight: '3px', fontSize: '1.2em', position: 'relative', top: '4px' }} />
+            <span>[Email]</span>
+          </a>
+        </div>
+        <div className="contact-link">
+          <a href="https://www.linkedin.com/in/tyzhou">
+            <FaLinkedin  style={{ marginRight: '3px', fontSize: '1.2em', position: 'relative', top: '4px' }} />
+            <span>[LinkedIn]</span>
+          </a>
+        </div>
+        <div className="contact-link">
+          <a href="https://scholar.google.com/citations?user=S4zK_nsAAAAJ&hl=en">
+            <FaGraduationCap  style={{ marginRight: '3px', fontSize: '1.2em', position: 'relative', top: '4px' }}/>
+            <span>[Scholar]</span>
+          </a>
+        </div>
       </div>
     </div>
 

@@ -41,8 +41,8 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          Last updated {new Date().toLocaleString('default', { month: 'long' })} {new Date().getFullYear()}.
-          {/* {new Date().toLocaleString('default', { month: 'long' })} */}
+          Last updated April 2025.
+          {/* {new Date().toLocaleString('default', { month: 'long' })} {new Date().getFullYear()} */}
         </footer>
       </div>
     </>
