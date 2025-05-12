@@ -9,6 +9,7 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import Header from "./header"
 import "./layout.css"
@@ -26,11 +27,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
       <Header siteTitle/>
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
+          maxWidth: `min(66%, 1200px)`,
           padding: `var(--size-gutter)`,
         }}
       >
@@ -41,7 +48,7 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          Last updated April 2025.
+          Last updated May 2025.
           {/* {new Date().toLocaleString('default', { month: 'long' })} {new Date().getFullYear()} */}
         </footer>
       </div>

@@ -1,4 +1,3 @@
-
 .navbar {
     margin: 2em 0 0 0;
     display: flex;
@@ -41,8 +40,17 @@ img {
 }
 
 .banner {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
 }
 
 .contact-link .icon {
@@ -52,4 +60,57 @@ img {
 .currentPage {
     text-decoration: solid underline 1.5px;
     text-underline-offset: 2.5px;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  display: inline-block;
+  float: none;
+  /* No need for fill property as these icons inherit color automatically */
+}
+
+.navbar a:hover .nav-icon {
+  fill: var(--color-secondary);
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+}
+
+.image-with-footnote {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.admit-image {
+  max-width: 100%;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: none !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footnote {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  font-style: italic;
+}
+
+.quote {
+    padding-left: 140px;
+    padding-right: 140px;
+    align-items: center;
 }

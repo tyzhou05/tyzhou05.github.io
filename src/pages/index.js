@@ -1,20 +1,29 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { MdEmail } from 'react-icons/md';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaGraduationCap } from 'react-icons/fa';
+import { FaLinkedin, FaGraduationCap, FaHome, FaBlog } from 'react-icons/fa';
+// Import the SVG files
+import { ReactComponent as HomeSvg } from "../images/home.svg"
+import { ReactComponent as BlogSvg } from "../images/blog.svg"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import css from "./index.css"
 import { StaticImage } from "gatsby-plugin-image"
+import { FaSignature } from "react-icons/fa6";
 
 const IndexPage = () => (
   <Layout>
-    <div className = "navbar">
-          <a className="currentPage" href='/'>Home</a>
-          {/* <a href="/research">Research</a> */}
+    <div className="navbar">
+      <a className="currentPage" href='/'>
+        <FaHome className="nav-icon" />
+        Home
+      </a>
+      <a href="/blog">
+        <FaSignature className="nav-icon" />
+        Blog
+      </a>
     </div>
 
     <div className = "banner">
@@ -22,8 +31,8 @@ const IndexPage = () => (
             className = "banner"
             src="../images/flowers.jpeg"
             alt="banner"
-            layout="fixed"
-            width={800}
+            layout="constrained"
+            width={1200}
             height={200}
             quality={100}
             formats={["auto", "webp", "avif"]}
@@ -53,7 +62,7 @@ const IndexPage = () => (
 
     <div>
       <p>
-        I'm Tony, currently a second-year undergraduate studying <a href = "https://www.cs.washington.edu">computer science</a> at the University of Washington, but originally from sunny San Jose, California. 
+        I'm Tony (zh: 周语童), currently a sophomore studying computer science at the University of Washington, but originally from sunny San Jose, California. 
       </p>
 
       {/* <p>
@@ -69,11 +78,12 @@ const IndexPage = () => (
       <p>
         In my free time, I like to explore coffee shops around Seattle 
         (currently very into bagels and iced lavender lattes) 
-        and try new recipes. 
+        and try new recipes. I also really like climbing, chess, and photography. 
+        Recently, as the weather's been getting better, I've also been getting into running 😟🏃🏻‍♂️
       </p>
 
       <p>
-        I'm always down to chat. Feel free to reach out! 
+        I'm trying to maintain my personal site better this year -- I'm always happy to chat. Feel free to reach out! 
       </p>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '4px'}}>
@@ -83,12 +93,12 @@ const IndexPage = () => (
             <span>[Email]</span>
           </a>
         </div>
-        <div className="contact-link">
+        {/* <div className="contact-link">
           <a href="https://www.linkedin.com/in/tyzhou">
             <FaLinkedin  style={{ marginRight: '3px', fontSize: '1.2em', position: 'relative', top: '4px' }} />
             <span>[LinkedIn]</span>
           </a>
-        </div>
+        </div> */}
         <div className="contact-link">
           <a href="https://scholar.google.com/citations?user=S4zK_nsAAAAJ&hl=en">
             <FaGraduationCap  style={{ marginRight: '3px', fontSize: '1.2em', position: 'relative', top: '4px' }}/>
