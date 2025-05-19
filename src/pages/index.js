@@ -55,9 +55,9 @@ const IndexPage = () => (
             />
           </div>
         </div>  */}
-      <h1>
+      <h2>
         Hello! 👋🏻
-      </h1>
+      </h2>
     </div>
 
     <div>
@@ -78,13 +78,28 @@ const IndexPage = () => (
       <p>
         In my free time, I like to explore coffee shops around Seattle 
         (currently very into bagels and iced lavender lattes) 
-        and try new recipes. I also really like climbing, chess, and photography. 
+        and try new recipes. I also really enjoy climbing, chess, and photography. 
         Recently, as the weather's been getting better, I've also been getting into running 😟🏃🏻‍♂️
       </p>
 
       <p>
-        I'm trying to maintain my personal site better this year -- I'm always happy to chat. Feel free to reach out! 
+        Trying to maintain my personal site better this year. I'm always happy to chat -- feel free to reach out! 
       </p>
+
+      {/* <div class = "thinking">
+        Currently thinking about:
+        <ol>
+          <li>
+            Communicating academic implications to short-form content
+          </li>
+          <li>
+            Long-form content and personalized science communication
+          </li>
+          <li>
+            human-LLM collaboration on knowledge-intensive work.
+          </li>
+        </ol>
+      </div> */}
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '4px'}}>
         <div>

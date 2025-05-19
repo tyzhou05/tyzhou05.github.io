@@ -10,7 +10,7 @@
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
   --font-lg: 18px;
-  --font-md: 16px;
+  --font-md: 14px;
   --font-sm: 14px;
   --font-sx: 12px;
   --line-height-loose: 1.75;
@@ -22,9 +22,14 @@
   --space-4: 24px;
   --space-5: 32px;
   --space-6: 64px;
-  --size-content: min(66%, 1200px); /*adjusts page content width to be responsive*/
+  --size-content: min(66%, 1200px);
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
+  --font-scale: 0.95;
+  --font-lg: calc(18px * var(--font-scale));
+  --font-md: calc(16px * var(--font-scale));
+  --font-sm: calc(14px * var(--font-scale));
+  --font-sx: calc(12px * var(--font-scale));
 }
 
 @media (min-width: 768px) {
