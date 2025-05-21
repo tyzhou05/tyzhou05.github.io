@@ -69,7 +69,6 @@ img {
   vertical-align: middle;
   display: inline-block;
   float: none;
-  /* No need for fill property as these icons inherit color automatically */
 }
 
 .navbar a:hover .nav-icon {
@@ -113,4 +112,62 @@ img {
     padding-left: 140px;
     padding-right: 140px;
     align-items: center;
+}
+
+.blog-entry-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.blog-entry-header:hover {
+  background-color: transparent;
+}
+
+.blog-entry-header h2 {
+  margin-bottom: 0;
+  margin-right: 0;
+  flex-grow: 1;
+}
+
+.dropdown-icon {
+  display: flex;
+  align-items: center;
+  color: #666;
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+  padding-top: 14px;
+}
+
+.dropdown-icon svg {
+  transition: transform 0.3s ease;
+  width: 12px;
+  height: 12px;
+}
+
+.dropdown-icon.expanded svg {
+  transform: rotate(180deg);
+}
+
+.blog-date {
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+.blog-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.blog-content.expanded {
+  max-height: 5000px;
+  opacity: 1;
+}
+
+.blog {
+  margin-bottom: 2rem;
 }
