@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { MdEmail } from 'react-icons/md';
-import { FaLinkedin, FaGraduationCap, FaHome, FaBlog } from 'react-icons/fa';
+import { FaLinkedin, FaGraduationCap, FaHome, FaBlog, FaCameraRetro } from 'react-icons/fa';
 // Import the SVG files
 import { ReactComponent as HomeSvg } from "../images/home.svg"
 import { ReactComponent as BlogSvg } from "../images/blog.svg"
@@ -12,6 +12,7 @@ import * as styles from "../components/index.module.css"
 import css from "./index.css"
 import { StaticImage } from "gatsby-plugin-image"
 import { FaSignature } from "react-icons/fa6";
+import {FaImages} from "react-icons/fa6";
 
 const IndexPage = () => (
   <Layout>
@@ -23,6 +24,10 @@ const IndexPage = () => (
       <a href="/blog">
         <FaSignature className="nav-icon" />
         Blog
+      </a>
+      <a href="/pics">
+        <FaImages className="nav-icon" />
+        Pics
       </a>
     </div>
 
@@ -78,8 +83,8 @@ const IndexPage = () => (
       <p>
         In my free time, I like to explore coffee shops around Seattle 
         (currently very into bagels and iced lavender lattes) 
-        and try new recipes. I also really enjoy climbing, chess, and photography. 
-        Recently, as the weather's been getting better, I've also been getting into running 😟🏃🏻‍♂️
+        and try new recipes (tiramisu...). I also really enjoy climbing, chess, and photography. 
+        But recently I almost passed out while I did a 5k so my goal this summer is to get better at running 😟🏃🏻‍♂️
       </p>
 
       <p>

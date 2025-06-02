@@ -171,3 +171,46 @@ img {
 .blog {
   margin-bottom: 2rem;
 }
+
+.now-playing {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.spotify-icon {
+  color: #1db954;
+  font-size: 1rem;
+}
+
+.now-playing-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.now-playing-link:hover {
+  color: #1db954;
+}
+
+.song-title {
+  font-weight: 500;
+}
+
+.song-artist {
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column !important;
+    gap: 8px;
+    align-items: flex-start !important;
+  }
+  
+  .now-playing {
+    font-size: 0.8rem;
+  }
+}

@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Header from "./header"
+import NowPlaying from "./NowPlaying"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -46,10 +47,13 @@ const Layout = ({ children }) => {
           style={{
             marginTop: `var(--space-3)`,
             fontSize: `var(--font-sm)`,
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
           }}
         >
-          Last updated May 2025.
-          {/* {new Date().toLocaleString('default', { month: 'long' })} {new Date().getFullYear()} */}
+          <span>Last updated June 2025.</span>
+          <NowPlaying />
         </footer>
       </div>
     </>

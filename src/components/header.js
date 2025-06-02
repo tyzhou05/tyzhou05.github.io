@@ -21,14 +21,14 @@ const Header = ({ siteTitle }) => (
     >
       {siteTitle}
     </Link>
-    <a href = "https://uw.edu">
+    {/* <a href = "https://uw.edu">
     <img
       alt="UW Logo"
       height={25}
       style={{ margin: 0 }}
       src = {uw}
     />
-    </a>
+    </a> */}
   </header>
 )
 
