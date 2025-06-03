@@ -7,6 +7,7 @@ import { ReactComponent as HomeSvg } from "../images/home.svg"
 import { ReactComponent as BlogSvg } from "../images/blog.svg"
 
 import Layout from "../components/layout"
+import Navigation from "../components/Navigation"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import css from "./index.css"
@@ -16,21 +17,8 @@ import {FaImages} from "react-icons/fa6";
 
 const IndexPage = () => (
   <Layout>
-    <div className="navbar">
-      <a className="currentPage" href='/'>
-        <FaHome className="nav-icon" />
-        Home
-      </a>
-      <a href="/blog">
-        <FaSignature className="nav-icon" />
-        Blog
-      </a>
-      <a href="/pics">
-        <FaImages className="nav-icon" />
-        Pics
-      </a>
-    </div>
-
+    <Navigation currentPage="home" />
+    
     <div className = "banner">
         <StaticImage
             className = "banner"

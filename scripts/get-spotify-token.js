@@ -5,11 +5,6 @@ const axios = require('axios');
 const app = express();
 const port = 8888;
 
-// Replace these with your actual values
-const CLIENT_ID = '361d7805f85e44ac84012ad8041e6502';
-const CLIENT_SECRET = '594ffa251ba044d59c4b68b9af52e54f';
-const REDIRECT_URI = 'http://localhost:8888/callback';
-
 app.get('/login', (req, res) => {
   const scope = 'user-read-currently-playing user-read-playback-state';
   

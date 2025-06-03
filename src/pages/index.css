@@ -1,10 +1,15 @@
+/* Remove the header margin override */
+/* header {
+  margin-bottom: 2rem !important;
+} */
+
 .navbar {
-    margin: 2em 0 0 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 1em;
-  }
+  margin: 2em 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1em;
+}
 
 .header {
     display: flex;
