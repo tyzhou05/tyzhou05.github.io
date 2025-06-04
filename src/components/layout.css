@@ -25,7 +25,7 @@
   --size-content: min(66%, 1200px);
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
-  --font-scale: 0.95;
+  --font-scale: 0.9;
   --font-lg: calc(18px * var(--font-scale));
   --font-md: calc(16px * var(--font-scale));
   --font-sm: calc(14px * var(--font-scale));

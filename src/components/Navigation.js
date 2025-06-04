@@ -19,13 +19,13 @@ const Navigation = ({ currentPage }) => {
         <FaSignature className="nav-icon" />
         Blog
       </a>
-      <a 
+      {/* <a 
         className={currentPage === 'pics' ? 'currentPage' : ''} 
         href="/pics"
       >
         <FaImages className="nav-icon" />
         Pics
-      </a>
+      </a> */}
     </div>
   );
 };
