@@ -12,13 +12,13 @@ const Navigation = ({ currentPage }) => {
         <FaHome className="nav-icon" />
         Home
       </a>
-      <a 
+      {/* <a 
         className={currentPage === 'blog' ? 'currentPage' : ''} 
         href="/blog"
       >
         <FaSignature className="nav-icon" />
         Blog
-      </a>
+      </a> */}
       {/* <a 
         className={currentPage === 'pics' ? 'currentPage' : ''} 
         href="/pics"
