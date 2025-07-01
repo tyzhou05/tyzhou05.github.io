@@ -71,7 +71,7 @@ const IndexPage = () => (
       <p>
         In my free time, I like to explore coffee shops around Seattle 
         (currently very into bagels and iced lavender lattes) 
-        and try new recipes (tiramisu...). I also really enjoy climbing, chess, and photography. 
+        and try new recipes. I also really enjoy climbing, chess, and photography. 
         But recently I almost passed out while I did a 5k so my goal this summer is to get better at running 😟🏃🏻‍♂️
       </p>
 
@@ -107,12 +107,12 @@ const IndexPage = () => (
             <span>[LinkedIn]</span>
           </a>
         </div> */}
-        <div className="contact-link">
+        {/* <div className="contact-link">
           <a href="https://scholar.google.com/citations?user=S4zK_nsAAAAJ&hl=en">
             <FaGraduationCap  style={{ marginRight: '3px', fontSize: '1.2em', position: 'relative', top: '4px' }}/>
             <span>[Scholar]</span>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
 
