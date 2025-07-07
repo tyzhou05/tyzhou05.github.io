@@ -55,7 +55,7 @@ const IndexPage = () => (
 
     <div>
       <p>
-        I'm Tony (zh: 周语童), currently a sophomore studying computer science at the University of Washington, but originally from sunny San Jose, California. 
+        I'm Tony, currently a sophomore studying computer science at the University of Washington, but originally from sunny San Jose, California. 
       </p>
 
       {/* <p>

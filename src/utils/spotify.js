@@ -16,6 +16,9 @@ export const getNowPlaying = async () => {
     return { isPlaying: false };
   }
 
+  // Debug: log the token (remove this after debugging)
+  console.log('Token exists:', ACCESS_TOKEN ? 'Yes' : 'No');
+
   try {
     const response = await fetch(NOW_PLAYING_ENDPOINT, {
       headers: {
