@@ -1,4 +1,3 @@
-// Check if we're in a browser environment
 const isBrowser = typeof window !== 'undefined';
 
 const CLIENT_ID = process.env.GATSBY_SPOTIFY_CLIENT_ID;
@@ -9,7 +8,6 @@ const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-pla
 const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
-// Get a fresh access token using the refresh token
 const getAccessToken = async () => {
   if (!CLIENT_ID || !CLIENT_SECRET || !REFRESH_TOKEN) {
     console.error('Missing Spotify credentials in environment variables');
@@ -49,13 +47,11 @@ const getAccessToken = async () => {
 };
 
 export const getTopTracks = async () => {
-  // Don't run during SSR
   if (!isBrowser) {
     return { hasData: false, tracks: [] };
   }
 
   try {
-    // Get a fresh access token
     const accessToken = await getAccessToken();
     
     if (!accessToken) {
@@ -69,7 +65,6 @@ export const getTopTracks = async () => {
       },
     });
 
-    // If error
     if (response.status > 400) {
       if (response.status === 401) {
         console.log('Spotify authentication failed - check your refresh token');
@@ -103,13 +98,11 @@ export const getTopTracks = async () => {
 };
 
 export const getNowPlaying = async () => {
-  // Don't run during SSR
   if (!isBrowser) {
     return { isPlaying: false };
   }
 
   try {
-    // Get a fresh access token
     const accessToken = await getAccessToken();
     
     if (!accessToken) {
@@ -123,12 +116,10 @@ export const getNowPlaying = async () => {
       },
     });
 
-    // If no content (nothing playing)
     if (response.status === 204) {
       return { isPlaying: false };
     }
 
-    // If error
     if (response.status > 400) {
       if (response.status === 401) {
         console.log('Spotify authentication failed - check your refresh token');
