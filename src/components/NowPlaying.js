@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { FaSpotify } from 'react-icons/fa';
-import { getNowPlaying } from '../utils/spotify';
+import { getTopTracks } from '../utils/spotify';
 
 const NowPlaying = () => {
-  const [nowPlaying, setNowPlaying] = useState({ isPlaying: false });
+  const [topTracks, setTopTracks] = useState({ hasData: false, tracks: [] });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchNowPlaying = async () => {
+    const fetchTopTracks = async () => {
       try {
-        const data = await getNowPlaying();
-        setNowPlaying(data);
+        const data = await getTopTracks();
+        setTopTracks(data);
       } catch (error) {
-        console.error('Error fetching now playing:', error);
+        console.error('Error fetching top tracks:', error);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchNowPlaying();
+    fetchTopTracks();
     
-    // Refresh every 30 seconds
-    const interval = setInterval(fetchNowPlaying, 30000);
+    // Refresh every 5 minutes (top tracks don't change as frequently)
+    const interval = setInterval(fetchTopTracks, 300000);
     
     return () => clearInterval(interval);
   }, []);
@@ -35,29 +35,39 @@ const NowPlaying = () => {
     );
   }
 
-  if (!nowPlaying.isPlaying) {
+  if (!topTracks.hasData || topTracks.tracks.length === 0) {
     return (
       <div className="now-playing">
         <FaSpotify className="spotify-icon" />
-        <span>Not playing</span>
+        <span>No top tracks available</span>
       </div>
     );
   }
 
   return (
     <div className="now-playing">
-      <FaSpotify className="spotify-icon" />
-      <a 
-        href={nowPlaying.songUrl} 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="now-playing-link"
-      >
-        <span className="song-title">{nowPlaying.title}</span>
-        <span className="song-artist"> by {nowPlaying.artist}</span>
-      </a>
+      <div className="top-tracks">
+        <div className="top-tracks-header" style={{ display: 'flex', alignItems: 'center' }}>
+          <FaSpotify className="spotify-icon" />
+          <span style={{ marginLeft: '6px' }}>listening this month:</span>
+        </div>
+        {topTracks.tracks.map((track, index) => (
+          <div key={index} className="track-item" style={{marginLeft: '2px'}}>
+            <span className="track-number">{index + 1}) </span>
+            <a 
+              href={track.songUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="now-playing-link"
+            >
+              <span className="song-title">{track.title}</span>
+              <span className="song-artist"> by {track.artist}</span>
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
-export default NowPlaying; 
+export default NowPlaying;

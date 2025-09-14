@@ -55,29 +55,33 @@ const IndexPage = () => (
 
     <div>
       <p>
-        I'm Tony, currently a sophomore studying computer science at the University of Washington, but originally from sunny San Jose, California. 
-      </p>
-
-      {/* <p>
-        At UW, I used to build driverless software for our first-ever fully autonomous racecar with <a href = "https://www.uwformulamotorsports.com/">UW Formula Motorsports</a>, 
-        and used to work part-time at the <a href = "https://www.washington.edu/ima/uwild/climb-with-rec/climbing-spaces/crags-climbing-center/">UW Crags Climbing Center</a> in the IMA. 
-      </p> */}
-
-      {/* <p>
-        Before UW, I previously sent a few experiments to the ISS, built a CubeSat, and played chess competitively, where I once thought I was going
-        to be a national master or an aerospace engineer.
-      </p> */}
-
-      <p>
-        In my free time, I like to explore coffee shops around Seattle 
-        (currently very into bagels and iced lavender lattes) 
-        and try new recipes. I also really enjoy climbing, chess, and photography. 
-        But recently I almost passed out while I did a 5k so my goal this summer is to get better at running 😟🏃🏻‍♂️
+        I'm Tony, currently a junior studying computer science at the <a href = "https://uw.edu">University of Washington</a>, but originally from sunny San Jose, California. 
       </p>
 
       <p>
-        Trying to maintain my personal site better this year. I'm always happy to chat -- feel free to reach out! 
+        At UW, I've been primarily working as an undergrad researcher with <a href = "https://faculty.washington.edu/garyhs/">Gary Hsieh</a> (HCDE) and <a href = "https://homes.cs.washington.edu/~axz/">Amy Zhang</a> (CSE). 
+        Over the summers I've also been collaborating with <a href = "https://dingzeyu.li/">Ding Li</a> (Adobe Research). 
+
+        Research topics I'm thinking around are within HCI, science communication, social media, and writing tools. 
+        
+        {/* I'm currently working through <a href = "https://books.google.com/books/about/Sketching_User_Experiences_Getting_the_D.html?id=2vfPxocmLh0C&source=kp_book_description">Sketching User Experiences</a> by Bill Buxton. */}
       </p>
+
+      <p>
+        In my free time this summer, I've been doing my best to understand proper houseplant care: my monstera deliciosa is slowly taking over my window, yet my n'joy pothos has not grown since I bought it.
+        
+        I love attempting my hand at traditional Italian pastas and I'm trying to perfect a <a href = "https://www.youtube.com/watch?v=lXEtC3Y9sqY">rigatoni carbonara</a>.
+      </p>
+
+      <p>
+        Hoping to keep my personal site more up to date this year. I am always happy to chat, feel free to reach out! :)
+      </p>
+
+      {/* <hr></hr>
+
+      <p>
+        I was originally an undeclared engineering major and transferred into the CS department. I wrote a bit about that on my blog here.
+      </p> */}
 
       {/* <div class = "thinking">
         Currently thinking about:
@@ -98,7 +102,7 @@ const IndexPage = () => (
         <div>
           <a href="mailto:tyzhou05@uw.edu">
             <MdEmail style={{ marginRight: '3px', fontSize: '1.2em', position: 'relative', top: '4px' }} />
-            <span>[Email]</span>
+            <span>[email]</span>
           </a>
         </div>
         {/* <div className="contact-link">

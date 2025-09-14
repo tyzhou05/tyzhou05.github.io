@@ -45,15 +45,16 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer
           style={{
-            marginTop: `var(--space-3)`,
+            marginTop: `var(--space-2)`,
             fontSize: `var(--font-sm)`,
             display: 'flex',
             justifyContent: 'space-between',
-            alignItems: 'center',
+            alignItems: 'flex-start',
+            gap: `var(--space-3)`,
           }}
         >
-          <span>Last updated June 2025.</span>
           <NowPlaying />
+          <span>Last updated September 2025.</span>
         </footer>
       </div>
     </>

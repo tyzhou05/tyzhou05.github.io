@@ -15,12 +15,6 @@ const Research = () => (
     </div>
     <div>
 
-      {/* <p>
-        I'm always grateful for my first research experiences, where I did some data analysis for engineered
-        muscle cells in a <a href = "https://med.stanford.edu/huanglab.html">tissue engineering lab</a> at 
-        Stanford Med.
-      </p> */}
-
       {/* <h3>
         Under Review:
       </h3> */}
