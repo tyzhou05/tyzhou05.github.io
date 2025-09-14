@@ -57,7 +57,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `actor:400` // Actor only has regular weight available
+          `alegreya sans:300,400,500,600,700,800`
         ],
         display: 'swap'
       }
