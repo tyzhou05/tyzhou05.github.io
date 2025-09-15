@@ -23,7 +23,7 @@ const IndexPage = () => (
       <div className="profile-image">
         <StaticImage
           className="pfp-new"
-          src="../images/newpfp.JPG"
+          src="../images/newpfp.jpg"
           alt="Tony Zhou"
           layout="fixed"
           width={200}
