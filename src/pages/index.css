@@ -44,18 +44,45 @@ img {
     margin-left: 40px;
 }
 
-.banner {
-    width: 100%;
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    max-height: 200px;
-    overflow: hidden;
+    position: relative;
 }
 
-.banner img {
-    width: 100%;
-    object-fit: cover;
-    height: 200px;
+.profile-image {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    z-index: 10;
+}
+
+.pfp-new {
+    border-radius: 10px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+}
+
+.image-caption {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    /* color: #666; */
+    /* font-style: italic; */
+}
+
+.content-area {
+    flex: 1;
+    max-width: calc(100% - 220px);
+    padding-right: 2rem;
+}
+
+/* Adjust main content to be more left-aligned */
+.main-container + div {
+    max-width: calc(100% - 220px);
+    padding-right: 2rem;
 }
 
 .contact-link .icon {
@@ -209,6 +236,33 @@ img {
 }
 
 @media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .profile-image {
+    position: static;
+    order: -1;
+  }
+  
+  .pfp-new {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  .content-area {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .main-container + div {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  
   footer {
     flex-direction: column !important;
     gap: 8px;

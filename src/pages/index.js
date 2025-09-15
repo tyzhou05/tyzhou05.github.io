@@ -19,38 +19,29 @@ const IndexPage = () => (
   <Layout>
     <Navigation currentPage="home" />
     
-    <div className = "banner">
+    <div className="main-container">
+      <div className="profile-image">
         <StaticImage
-            className = "banner"
-            src="../images/flowers.jpeg"
-            alt="banner"
-            layout="constrained"
-            width={1200}
-            height={200}
-            quality={100}
-            formats={["auto", "webp", "avif"]}
-            placeholder="blurred"
-          />
-    </div>
-    <div>
-       {/* <div class = "header">
-        <div>
-            <StaticImage
-              className = "pfp"
-              src="../images/tony.jpg"
-              alt="Tony Zhou"
-              layout="fixed"
-              width={128}
-              height={128}
-              quality={100}
-              formats={["auto", "webp", "avif"]}
-              placeholder="blurred"
-            />
-          </div>
-        </div>  */}
-      <h2>
-        Hello! 👋🏻
-      </h2>
+          className="pfp-new"
+          src="../images/newpfp.JPG"
+          alt="Tony Zhou"
+          layout="fixed"
+          width={200}
+          height={200}
+          quality={100}
+          formats={["auto", "webp", "avif"]}
+          placeholder="blurred"
+        />
+        <div className="image-caption">
+          he/him
+        </div>
+      </div>
+      
+      <div className="content-area">
+        <h2>
+          Hello! 👋🏻
+        </h2>
+      </div>
     </div>
 
     <div>
@@ -60,9 +51,9 @@ const IndexPage = () => (
 
       <p>
         At UW, I've been primarily working as an undergrad researcher with <a href = "https://faculty.washington.edu/garyhs/">Gary Hsieh</a> (HCDE) and <a href = "https://homes.cs.washington.edu/~axz/">Amy Zhang</a> (CSE). 
-        Over the summers I've also been collaborating with <a href = "https://dingzeyu.li/">Ding Li</a> (Adobe Research). 
+        Over the summers I also collaborate with <a href = "https://dingzeyu.li/">Ding Li</a> (Adobe Research). 
 
-        Research topics I'm thinking around are within HCI, science communication, social media, and writing tools. 
+        Research topics I'm thinking about mostly revolve around HCI, science communication, social media, and writing tools. 
         
         {/* I'm currently working through <a href = "https://books.google.com/books/about/Sketching_User_Experiences_Getting_the_D.html?id=2vfPxocmLh0C&source=kp_book_description">Sketching User Experiences</a> by Bill Buxton. */}
       </p>
