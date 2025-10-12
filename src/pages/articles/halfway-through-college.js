@@ -38,7 +38,7 @@ const HalfwayThroughCollege = () => {
               There are plenty of <a href="https://www.reddit.com/r/udub/comments/ffajy9/do_not_come_to_uw_if_you_want_to_do_cs_but_are/">doom-heavy posts </a> online about the process, but, perhaps due to some survivorship bias, I wanted to detail my thoughts and reflection on the experience.
             </p>
             
-            <div style={{ 
+            {/* <div style={{ 
               margin: 'var(--space-5) 0',
               textAlign: 'center'
             }}>
@@ -61,7 +61,7 @@ const HalfwayThroughCollege = () => {
               }}>
                 February 8th, 2024
               </p>
-            </div>
+            </div> */}
             
             <h3>Background</h3>
             <p>

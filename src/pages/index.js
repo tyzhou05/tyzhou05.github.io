@@ -23,7 +23,7 @@ const IndexPage = () => (
       <div className="profile-image">
         <StaticImage
           className="pfp-new"
-          src="../images/newpfp.jpg"
+          src="../images/pfpsmile.JPG"
           alt="Tony Zhou"
           layout="fixed"
           width={200}
@@ -59,9 +59,9 @@ const IndexPage = () => (
       </p>
 
       <p>
-        In my free time this summer, I've been doing my best to understand proper houseplant care: my monstera deliciosa is slowly taking over my window, yet my n'joy pothos has not grown since I bought it.
-        
-        I love attempting my hand at traditional Italian pastas and I'm trying to perfect a <a href = "https://www.youtube.com/watch?v=lXEtC3Y9sqY">rigatoni carbonara</a>.
+        In my limited free time this quarter, I've been doing my best to understand proper houseplant care: my monstera deliciosa is slowly taking over my window, yet my n'joy pothos has not grown since I bought it. I used to compete in chess tournaments and work at the <a href = "https://www.washington.edu/ima/uwild/climb-with-rec/climbing-spaces/crags-climbing-center/">Crags Climbing Center</a> at the UW IMA.
+{/*         
+        Recently I've been reviewing spots around Seattle <a href = "https://www.google.com/maps/contrib/106532734994751777840/photos/data=!4m3!8m2!3m1!1e1?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D">in my free time</a>. */}
       </p>
 
       <p>
@@ -73,8 +73,8 @@ const IndexPage = () => (
       <p>
         I was originally an undeclared engineering major and transferred into the CS department. I wrote a bit about that on my blog here.
       </p> */}
-
-      {/* <div class = "thinking">
+{/* 
+      <div class = "thinking">
         Currently thinking about:
         <ol>
           <li>
@@ -84,7 +84,7 @@ const IndexPage = () => (
             Long-form content and personalized science communication
           </li>
           <li>
-            human-LLM collaboration on knowledge-intensive work.
+            end user feed curation for social media
           </li>
         </ol>
       </div> */}

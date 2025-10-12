@@ -9,16 +9,16 @@ const Blog = () => {
   const articles = [
       {
         title: "My Favorite Espresso in Seattle",
-        date: "June 8th, 2025",
+        date: "Sept 24th, 2025",
         excerpt: "If I had a few hours to kill, where would I go?",
         slug: "/articles/coffee-seattle"
       },
-      {
-        title: "Almost halfway through college...",
-        date: "May 11th, 2025",
-        excerpt: "Declaring a major, reflections on my first two years, and imposter syndrome",
-        slug: "/articles/halfway-through-college"
-      }
+      // {
+      //   title: "Almost halfway through college...",
+      //   date: "May 11th, 2025",
+      //   excerpt: "Declaring a major, reflections on my first two years, and imposter syndrome",
+      //   slug: "/articles/halfway-through-college"
+      // }
   ];
 
   return (
