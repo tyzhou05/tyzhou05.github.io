@@ -6,6 +6,7 @@ const REFRESH_TOKEN = process.env.GATSBY_SPOTIFY_REFRESH_TOKEN;
 
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
 const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`;
+const RECENTLY_PLAYED_ENDPOINT = `https://api.spotify.com/v1/me/player/recently-played`;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
 const getAccessToken = async () => {
@@ -93,6 +94,58 @@ export const getTopTracks = async () => {
     };
   } catch (error) {
     console.error('Error fetching top tracks:', error);
+    return { hasData: false, tracks: [] };
+  }
+};
+
+export const getRecentlyPlayed = async () => {
+  if (!isBrowser) {
+    return { hasData: false, tracks: [] };
+  }
+
+  try {
+    const accessToken = await getAccessToken();
+    
+    if (!accessToken) {
+      console.log('Could not get Spotify access token');
+      return { hasData: false, tracks: [] };
+    }
+
+    const response = await fetch(`${RECENTLY_PLAYED_ENDPOINT}?limit=3`, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+
+    if (response.status > 400) {
+      if (response.status === 401) {
+        console.log('Spotify authentication failed - check your refresh token');
+      }
+      console.error(`Spotify API error: ${response.status}`);
+      return { hasData: false, tracks: [] };
+    }
+
+    const data = await response.json();
+
+    if (!data || !data.items || data.items.length === 0) {
+      return { hasData: false, tracks: [] };
+    }
+
+    const tracks = data.items.map((item) => ({
+      title: item.track.name,
+      artist: item.track.artists.map((artist) => artist.name).join(', '),
+      album: item.track.album.name,
+      albumImageUrl: item.track.album.images[0]?.url,
+      songUrl: item.track.external_urls.spotify,
+      playedAt: item.played_at,
+    }));
+
+    return {
+      hasData: true,
+      tracks: tracks,
+    };
+  } catch (error) {
+    console.error('Error fetching recently played tracks:', error);
     return { hasData: false, tracks: [] };
   }
 };

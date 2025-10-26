@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { FaSpotify } from 'react-icons/fa';
-import { getTopTracks } from '../utils/spotify';
+import { getRecentlyPlayed } from '../utils/spotify';
 
 const NowPlaying = () => {
-  const [topTracks, setTopTracks] = useState({ hasData: false, tracks: [] });
+  const [recentlyPlayed, setRecentlyPlayed] = useState({ hasData: false, tracks: [] });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchTopTracks = async () => {
+    const fetchRecentlyPlayed = async () => {
       try {
-        const data = await getTopTracks();
-        setTopTracks(data);
+        const data = await getRecentlyPlayed();
+        setRecentlyPlayed(data);
       } catch (error) {
-        console.error('Error fetching top tracks:', error);
+        console.error('Error fetching recently played tracks:', error);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchTopTracks();
+    fetchRecentlyPlayed();
     
-    // Refresh every 5 minutes (top tracks don't change as frequently)
-    const interval = setInterval(fetchTopTracks, 300000);
+    // Refresh every second to keep recently played up to date
+    const interval = setInterval(fetchRecentlyPlayed, 1000);
     
     return () => clearInterval(interval);
   }, []);
@@ -35,11 +35,11 @@ const NowPlaying = () => {
     );
   }
 
-  if (!topTracks.hasData || topTracks.tracks.length === 0) {
+  if (!recentlyPlayed.hasData || recentlyPlayed.tracks.length === 0) {
     return (
       <div className="now-playing">
         <FaSpotify className="spotify-icon" />
-        <span>No top tracks available</span>
+        <span>No recently played tracks available</span>
       </div>
     );
   }
@@ -49,9 +49,9 @@ const NowPlaying = () => {
       <div className="top-tracks">
         <div className="top-tracks-header" style={{ display: 'flex', alignItems: 'center' }}>
           <FaSpotify className="spotify-icon" />
-          <span style={{ marginLeft: '6px' }}>listening this month:</span>
+          <span style={{ marginLeft: '6px' }}>recently listening:</span>
         </div>
-        {topTracks.tracks.map((track, index) => (
+        {recentlyPlayed.tracks.map((track, index) => (
           <div key={index} className="track-item" style={{marginLeft: '2px'}}>
             <span className="track-number">{index + 1}) </span>
             <a 

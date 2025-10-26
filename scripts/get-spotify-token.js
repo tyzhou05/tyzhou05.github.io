@@ -15,7 +15,7 @@ console.log('Make sure you have added http://127.0.0.1:888/callback to your Spot
 console.log('Client ID:', CLIENT_ID);
 
 app.get('/login', (req, res) => {
-  const scope = 'user-read-currently-playing user-read-playback-state user-top-read';
+  const scope = 'user-read-currently-playing user-read-playback-state user-top-read user-read-recently-played';
   
   res.redirect('https://accounts.spotify.com/authorize?' +
     querystring.stringify({
