@@ -49,11 +49,26 @@ const NowPlaying = () => {
       <div className="top-tracks">
         <div className="top-tracks-header" style={{ display: 'flex', alignItems: 'center' }}>
           <FaSpotify className="spotify-icon" />
-          <span style={{ marginLeft: '6px' }}>recently listening:</span>
+          <span style={{ marginLeft: '4px' }}>recently listening:</span>
         </div>
         {recentlyPlayed.tracks.map((track, index) => (
-          <div key={index} className="track-item" style={{marginLeft: '2px'}}>
+          <div key={index} className="track-item" style={{marginLeft: '2px', display: 'flex', alignItems: 'center', padding: '4px', lineHeight: '1.4', height: '20px'}}>
             <span className="track-number">{index + 1}) </span>
+            {track.albumImageUrl && (
+              <img 
+                src={track.albumImageUrl} 
+                alt={`${track.album} album cover`}
+                style={{
+                  width: '12px',
+                  height: '12px',
+                  borderRadius: '3px',
+                  marginLeft: '4px',
+                  marginRight: '4px',
+                  display: 'block',
+                  verticalAlign: 'middle'
+                }}
+              />
+            )}
             <a 
               href={track.songUrl} 
               target="_blank" 
