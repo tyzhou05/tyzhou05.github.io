@@ -59,9 +59,9 @@ const NowPlaying = () => {
                 src={track.albumImageUrl} 
                 alt={`${track.album} album cover`}
                 style={{
-                  width: '12px',
-                  height: '12px',
-                  borderRadius: '3px',
+                  width: '16px',
+                  height: '16px',
+                  borderRadius: '0px',
                   marginLeft: '4px',
                   marginRight: '4px',
                   display: 'block',
