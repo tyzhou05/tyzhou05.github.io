@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { MdEmail } from 'react-icons/md';
-import { FaLinkedin, FaGraduationCap, FaHome, FaBlog, FaCameraRetro } from 'react-icons/fa';
+// import { FaLinkedin, FaGraduationCap, FaHome, FaBlog, FaCameraRetro} from 'react-icons/fa';
 // Import the SVG files
 import { ReactComponent as HomeSvg } from "../images/home.svg"
 import { ReactComponent as BlogSvg } from "../images/blog.svg"
@@ -12,7 +12,7 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import css from "./index.css"
 import { StaticImage } from "gatsby-plugin-image"
-import { FaSignature, FaBluesky } from "react-icons/fa6";
+import { FaSignature, FaBluesky, FaMapLocationDot } from "react-icons/fa6";
 import {FaImages} from "react-icons/fa6";
 
 const IndexPage = () => (
@@ -42,6 +42,9 @@ const IndexPage = () => (
           <a href="https://tyzhou.bsky.social" aria-label="Bluesky" target="_blank" rel="noopener noreferrer">
             <FaBluesky style={{ fontSize: '1.1em', position: 'relative', top: '4px' }} />
           </a>
+          <a href="https://www.google.com/maps/contrib/106532734994751777840/reviews" aria-label="Google Maps" target="_blank" rel="noopener noreferrer">
+            <FaMapLocationDot style={{ fontSize: '1.1em', position: 'relative', top: '4px' }} />
+          </a>
         </div>
       </div>
       
@@ -67,7 +70,7 @@ const IndexPage = () => (
       </p>
 
       <p>
-        This quarter I've been doing my best to understand proper houseplant care: my monstera deliciosa is slowly taking over my window, yet my n'joy pothos has not grown since I bought it. I used to play chess competitively and work at the <a href = "https://www.washington.edu/ima/uwild/climb-with-rec/climbing-spaces/crags-climbing-center/">Crags Climbing Center</a> at the UW IMA.
+        This quarter I've been doing my best to understand proper houseplant care: my monstera deliciosa is slowly taking over my window, yet my n'joy pothos has not grown since I bought it. When I used to have free time, I played <a href ="https://ratings.uschess.org/player/16147444">chess competitively</a> and worked at the <a href = "https://www.washington.edu/ima/uwild/climb-with-rec/climbing-spaces/crags-climbing-center/">Crags Climbing Center</a> at the UW IMA.
 {/*         
         Recently I've been reviewing spots around Seattle <a href = "https://www.google.com/maps/contrib/106532734994751777840/photos/data=!4m3!8m2!3m1!1e1?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D">in my free time</a>. */}
       </p>

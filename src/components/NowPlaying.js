@@ -47,9 +47,9 @@ const NowPlaying = () => {
   return (
     <div className="now-playing">
       <div className="top-tracks">
-        <div className="top-tracks-header" style={{ display: 'flex', alignItems: 'center' }}>
+        <div className="top-tracks-header" style={{ display: 'flex', alignItems: 'center' , paddingBottom: '4px'}}>
           <FaSpotify className="spotify-icon" />
-          <span style={{ marginLeft: '4px', fontWeight: 'normal' }}>recently listening:</span>
+          <span style={{ marginLeft: '4px' }}>recently listening:</span>
         </div>
         {recentlyPlayed.tracks.map((track, index) => (
           <div key={index} className="track-item" style={{display: 'flex', alignItems: 'center', lineHeight: '1.4', height: '20px'}}>
