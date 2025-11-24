@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
           }}
         >
           <NowPlaying />
-          <span>Last updated October 2025.</span>
+          <span>Last updated November 2025.</span>
         </footer>
       </div>
     </>

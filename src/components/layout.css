@@ -5,7 +5,7 @@
   --color-secondary: #190f2e;
   --color-code-bg: #fff4db;
   --color-code: #8a6534;
-  --font-sans: "Alegreya Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-sans: "Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
   --font-lg: 18px;
@@ -13,7 +13,7 @@
   --font-sm: 14px;
   --font-sx: 12px;
   --line-height-loose: 1.75;
-  --line-height-normal: 1.4;
+  --line-height-normal: 1.45;
   --line-height-dense: 1.1;
   --space-1: 4px;
   --space-2: 8px;
@@ -24,7 +24,7 @@
   --size-content: min(66%, 1200px);
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
-  --font-scale: 1.0;
+  --font-scale: 0.85;
   --font-lg: calc(18px * var(--font-scale));
   --font-md: calc(16px * var(--font-scale));
   --font-sm: calc(14px * var(--font-scale));
@@ -56,7 +56,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: var(--color-text);
   font-family: var(--font-sans) !important;
-  font-weight: normal;
+  font-weight: 300;
   margin: 0;
   word-wrap: break-word;
 }
@@ -84,8 +84,7 @@ abbr[title] {
 }
 b,
 strong {
-  font-weight: inherit;
-  font-weight: bolder;
+  font-weight: 600;
 }
 dfn {
   font-style: italic;

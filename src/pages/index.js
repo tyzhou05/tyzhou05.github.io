@@ -12,7 +12,7 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import css from "./index.css"
 import { StaticImage } from "gatsby-plugin-image"
-import { FaSignature } from "react-icons/fa6";
+import { FaSignature, FaBluesky } from "react-icons/fa6";
 import {FaImages} from "react-icons/fa6";
 
 const IndexPage = () => (
@@ -32,8 +32,16 @@ const IndexPage = () => (
           formats={["auto", "webp", "avif"]}
           placeholder="blurred"
         />
-        <div className="image-caption">
-          he/him
+        <div style={{ textAlign: 'right', marginTop: '8px', display: 'flex', justifyContent: 'flex-end', gap: '6px' }}>
+          <a href="mailto:tyzhou05@uw.edu" aria-label="Email">
+            <MdEmail style={{ fontSize: '1.2em', position: 'relative', top: '4px' }} />
+          </a>
+          {/* <a href="https://scholar.google.com/citations?user=S4zK_nsAAAAJ&hl=en" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
+            <FaGraduationCap style={{ fontSize: '1.2em', position: 'relative', top: '4px' }} />
+          </a> */}
+          <a href="https://tyzhou.bsky.social" aria-label="Bluesky" target="_blank" rel="noopener noreferrer">
+            <FaBluesky style={{ fontSize: '1.1em', position: 'relative', top: '4px' }} />
+          </a>
         </div>
       </div>
       
@@ -59,7 +67,7 @@ const IndexPage = () => (
       </p>
 
       <p>
-        In my limited free time this quarter, I've been doing my best to understand proper houseplant care: my monstera deliciosa is slowly taking over my window, yet my n'joy pothos has not grown since I bought it. I used to compete in chess tournaments and work at the <a href = "https://www.washington.edu/ima/uwild/climb-with-rec/climbing-spaces/crags-climbing-center/">Crags Climbing Center</a> at the UW IMA.
+        This quarter I've been doing my best to understand proper houseplant care: my monstera deliciosa is slowly taking over my window, yet my n'joy pothos has not grown since I bought it. I used to play chess competitively and work at the <a href = "https://www.washington.edu/ima/uwild/climb-with-rec/climbing-spaces/crags-climbing-center/">Crags Climbing Center</a> at the UW IMA.
 {/*         
         Recently I've been reviewing spots around Seattle <a href = "https://www.google.com/maps/contrib/106532734994751777840/photos/data=!4m3!8m2!3m1!1e1?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D">in my free time</a>. */}
       </p>
@@ -88,27 +96,6 @@ const IndexPage = () => (
           </li>
         </ol>
       </div> */}
-
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '4px'}}>
-        <div>
-          <a href="mailto:tyzhou05@uw.edu">
-            <MdEmail style={{ marginRight: '3px', fontSize: '1.2em', position: 'relative', top: '4px' }} />
-            <span>[email]</span>
-          </a>
-        </div>
-        {/* <div className="contact-link">
-          <a href="https://www.linkedin.com/in/tyzhou">
-            <FaLinkedin  style={{ marginRight: '3px', fontSize: '1.2em', position: 'relative', top: '4px' }} />
-            <span>[LinkedIn]</span>
-          </a>
-        </div> */}
-        {/* <div className="contact-link">
-          <a href="https://scholar.google.com/citations?user=S4zK_nsAAAAJ&hl=en">
-            <FaGraduationCap  style={{ marginRight: '3px', fontSize: '1.2em', position: 'relative', top: '4px' }}/>
-            <span>[Scholar]</span>
-          </a>
-        </div> */}
-      </div>
     </div>
 
     <hr></hr>

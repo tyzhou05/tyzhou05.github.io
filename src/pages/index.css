@@ -94,8 +94,8 @@ img {
 }
 
 .nav-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   margin-right: 8px;
   vertical-align: middle;
   display: inline-block;
@@ -207,8 +207,7 @@ img {
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 0.85rem;
-  color: #666;
+  font-weight: 300;
 }
 
 .spotify-icon {
