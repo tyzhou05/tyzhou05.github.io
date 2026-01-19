@@ -47,8 +47,8 @@ const NowPlaying = () => {
   return (
     <div className="now-playing">
       <div className="top-tracks">
-        <div className="top-tracks-header" style={{ display: 'flex', alignItems: 'center' , paddingBottom: '8px'}}>
-          <span class="reclisten">RECENTLY LISTENING:</span>
+        <div className="top-tracks-header" style={{ display: 'flex', alignItems: 'center'}}>
+          <span class="reclisten">currently listening to...</span>
         </div>
         <div style={{ display: 'flex', gap: '40px', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
           {recentlyPlayed.tracks.map((track, index) => (
@@ -71,10 +71,10 @@ const NowPlaying = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="now-playing-link"
-                style={{ display: 'flex', flexDirection: 'column', gap: '4px', textAlign: 'left', paddingTop: '0px', marginTop: '14px', lineHeight: '1' }}
+                style={{ display: 'flex', flexDirection: 'column', gap: '2px', textAlign: 'left', marginTop: '14px'}}
               >
-                <span className="song-title" style={{ lineHeight: '1.2' }}>{track.title}</span>
-                <span className="song-artist" style={{ lineHeight: '1.2' }}>by {track.artist}</span>
+                <span className="song-title">{track.title}</span>
+                <span className="song-artist">by {track.artist}</span>
               </a>
             </div>
           ))}

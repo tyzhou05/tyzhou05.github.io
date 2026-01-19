@@ -88,7 +88,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
       {/* <hr>
       </hr> */}
 
-      <h3 class="test">RESEARCH PROJECTS</h3>
+      <h3 class="research-projects">RESEARCH PROJECTS</h3>
         <p class = "publication">
           [CHI 2026] &nbsp; 
           PaperTok: Exploring the Use of Generative AI for Creating Short-Form Videos for Research Communication.
@@ -137,7 +137,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
       </div> */}
     </div>
 
-    <hr></hr>
+    <hr class="divider"></hr>
   </Layout>
 )
 

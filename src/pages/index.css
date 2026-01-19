@@ -39,9 +39,9 @@
   font-size: 12px;
 }
 
-.test {
+.research-projects {
   margin-top: 60px;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 12px;
 }
 
@@ -69,8 +69,13 @@ img {
     z-index: 10;
 }
 
+.divider {
+  height: 0.5px;
+  margin-top: 40px;
+}
+
 .pfp-new {
-    border-radius: 10px;
+    border-radius: 0px;
     /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
 }
 
