@@ -9,8 +9,8 @@ const Navigation = ({ currentPage }) => {
         className={currentPage === 'home' ? 'currentPage' : ''} 
         href='/'
       >
-        <FaHome className="nav-icon" />
-        Home
+        {/* <FaHome className="nav-icon" /> */}
+        {/* Home */}
       </a>
       {/* <a 
         className={currentPage === 'blog' ? 'currentPage' : ''} 

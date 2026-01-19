@@ -35,14 +35,24 @@
     display: flex;
 }
 
+.reclisten {
+  font-size: 12px;
+}
+
+.test {
+  margin-top: 60px;
+  font-weight: 800;
+  font-size: 12px;
+}
+
 img {
     float: left;
 }
-
+/* 
 .publication {
     display: inline-block;
     margin-left: 40px;
-}
+} */
 
 .main-container {
     display: flex;
@@ -89,7 +99,7 @@ img {
 }
 
 .currentPage {
-    text-decoration: solid underline 1.5px;
+    /* text-decoration: solid underline 1.5px; */
     text-underline-offset: 2.5px;
 }
 
@@ -221,9 +231,9 @@ img {
   transition: color 0.2s ease;
 }
 
-.now-playing-link:hover {
+/* .now-playing-link:hover {
   color: #1db954;
-}
+} */
 
 .song-title {
   font-weight: 500;
