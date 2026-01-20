@@ -144,14 +144,21 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
           </button>
         </div>
         {btp1 && (
-          <>
+          <div style={{
+            background: '#2a2a2a',
+            color: '#ffffff',
+            padding: 'var(--space-5)',
+            marginTop: 'var(--space-3)',
+            marginBottom: 'var(--space-3)',
+            borderRadius: '0px'
+          }}>
             <p>
-              I'm really proud of this paper in a lot of ways. This was an idea I had been broadly thinking about since starting to work with Gary, because I remember the first thing I noticed was Donghoon's line of work focuses on prescriptivity (design cards) for practicioners (designers). 
-              I wondered if there was a way to broaden the scope, even back to Gary's existing work on science communication.
-              But as the only undergrad in a lab full of accomplished graduate students, I never tried to pitch my own ideas. Luckily, the opportunity sort of presented itself when we all wanted to work on a fun summer lab project.
+              I'm really proud of this project in a number of ways. This was an idea I had been broadly thinking about since starting to work with Gary, because I remember the first thing I noticed was Donghoon's line of work focuses on prescriptivity (design cards) for practicioners (designers). 
+              While Donghoon is very smart and it makes sense to go more specific, I wondered if there was a way to broaden the scope, even back to Gary's existing work on science communication.
+              But as the only undergrad in a lab full of accomplished graduate students, I was always a little scared of trying to pitch my own ideas. Luckily, the opportunity sort of presented itself when we all wanted to work on a fun summer lab project.
             </p>
             <p>
-              I thought about how people consume content nowadays. I realized that one main way that people receive information is just through social media (addictive short-form videos on TikTok/Instagram Reels/YT Shorts).
+              I thought long and hard about how people consume content nowadays. I realized that one primary way that people receive information is just through social media (read: addictive short-form videos on tiktok).
 
               While most people don't read academic papers in their free time, people watch short-form videos that are designed to be engaging in all the best (and worst) ways possible in their free time.
               I also saw some recent video-related work (Papeos, PodReels) that I found inspirational. With that, I pitched my half baked idea:
@@ -167,7 +174,6 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
                 alt="Notes from notes app about PaperTok idea"
                 quality={100}
                 formats={["auto", "webp", "avif"]}
-                // placeholder="blurred"
                 style={{
                   border: '1px solid #ddd',
                   borderRadius: '4px'
@@ -175,25 +181,25 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
               />
             </div>
             <p> 
-              It turns out the idea had some real merit; we quickly all opted for this one.
+              While the notes are a bit scrambled, it turns out the idea had some real merit; we quickly all opted for this one.
               I could never have done it on my own so I'm grateful to my labmates and especially Meziah for taking the lead on this one.
-              Despite some R&R pushback, I really didn't have any doubts about it getting in.
+              I kind of expected some standard R&R pushback, but I really didn't have any doubts about it ultimately getting in. 
+              To be honest, I kind of didn't feel anything when it did, and even if it didn't, I kind of feel like I still wouldn't have felt anything? Maybe it's good to be (sometimes) a bit detatched from your work.
             </p>
             <p>
-              Looking back, the idea was somewhat understandable in my head and pretty much there in my notes. Although most definitely not something publishable yet.
+              Looking back, the idea was pretty much there in my head and almost communicated through my notes. Although not something publishable or interesting research-wise yet.
 
               I learned that <i>good ideas don't happen in a vacuum</i>. And maybe my bad ideas might still lead to something along the way. 
 
               If I never thought about speaking up, it might be still stuck in my notes.
-              {/* The ultimate paper had a lot of evolving ideas and  */}
             </p>
-          </>
+          </div>
         )}
         <p class = "publication">
           [CHI 2026] &nbsp; 
           Decoupling of Usefulness and Novelty: Evaluating the Impact of Generative AI on Design Outputs and Designers' Creative Thinking.
           <br></br>
-          Yue Fu, <b>Tony Zhou</b>, Bin Han, Marx Wang, Yixin Chen, Zelia Gomes Da Costa Lai, Rock Yuren Pang, Katharina Reinecke, Jacob O.
+          Yue (Chris) Fu, <b>Tony Zhou</b>, Bin Han, Marx Wang, Yixin Chen, Zelia Gomes Da Costa Lai, Rock Yuren Pang, Katharina Reinecke, Jacob O.
           Wobbrock, Alexis Hiniker.
         </p>
         <div style={{
@@ -242,17 +248,24 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
           </button>
         </div>
         {btp2 && (
-          <>
+          <div style={{
+            background: '#2a2a2a',
+            color: '#ffffff',
+            padding: 'var(--space-5)',
+            marginTop: 'var(--space-3)',
+            marginBottom: 'var(--space-3)',
+            borderRadius: '0px'
+          }}>
             <p>
-              In summer 2024, I wanted to gain some publishable HCI research experience, and I reached out to Chris after seeing one of his prior studies. I was also a bit nervous back then to directly contact professors; PhD students felt more approachable.
-              Luckily Chris is a busy bee: he had numerous projects in progress and I opted to work on this one. The study and data collection was already done during the school year, so my work was a lot of data analysis+python scripting+qualitative coding. 
+              In summer 2024, I wanted to gain some publishable HCI research experience, and I reached out to Chris after looking at some of his prior studies. I was also a bit nervous back then to directly contact professors; PhD students felt more approachable.
+              Luckily Chris is super easy to work with and he is a busy bee: he had numerous projects in progress and I opted to work on this one. The study and data collection was already done during the school year, so my work was a lot of data analysis+python scripting+qualitative coding. 
             </p>
             <p>
-              Unfortunately we got soundly rejected from CHI 2025 and C&C 2025: reviewers wanted to see a stronger output evaluation besides just clients.
+              Unfortunately we got soundly rejected from CHI 2025 and C&C 2025. Reviewers wanted to see a stronger output evaluation besides just clients, which was valid but discouraging.
               Chris had the great idea to add collaborators (Rock, Katharina) to evaluate on a crowdsourced platform, Labinthewild, to which I deployed the survey with a lot of help from Rock. 
               Though I did not lead this project, this nonetheless was my first time contributing to a paper and understanding the full submission cycle (three times!)
             </p>
-          </>
+          </div>
         )}
         {/* <StaticImage
           className = "research-icon"
