@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { MdEmail } from 'react-icons/md';
-import { FaChevronRight } from 'react-icons/fa';
+import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 import { ReactComponent as HomeSvg } from "../images/home.svg"
 import { ReactComponent as BlogSvg } from "../images/blog.svg"
 
@@ -91,7 +91,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
       {/* <hr>
       </hr> */}
 
-      <h3 class="research-projects">RESEARCH PROJECTS</h3>
+      <h3 class="research-projects">PROJECTS</h3>
         <p class = "publication">
           [CHI 2026] &nbsp; 
           PaperTok: Exploring the Use of Generative AI for Creating Short-Form Videos for Research Communication.
@@ -112,7 +112,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             gap: '12px',
             alignItems: 'center'
           }}>
-            <a href="#" style={{ fontWeight: '400' }}>[pdf coming soon]</a>
+            <a href="#" style={{ fontWeight: '400' }}>[pdf]</a>
             {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
             <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
             <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
@@ -133,6 +133,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
               fontWeight: '500'
             }}
           >
+            behind the scenes
             <FaChevronRight 
               style={{
                 fontSize: '0.8em',
@@ -140,7 +141,6 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
                 transform: btp1 ? 'rotate(90deg)' : 'rotate(0deg)'
               }}
             />
-            behind the scenes
           </button>
         </div>
         {btp1 && (
@@ -153,14 +153,14 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             borderRadius: '0px'
           }}>
             <p>
-              I'm really proud of this project in a number of ways. This was an idea I had been broadly thinking about since starting to work with Gary, because I remember the first thing I noticed was Donghoon's line of work focuses on prescriptivity (design cards) for practicioners (designers). 
+              I'm really proud of this project, so it deserves a longer reflection. This was an idea I had been broadly thinking about since starting to work with Gary fall 2024, because I remember the first thing I noticed was Donghoon's line of work focuses on prescriptivity (design cards) for practicioners (designers). 
               While Donghoon is very smart and it makes sense to go more specific, I wondered if there was a way to broaden the scope, even back to Gary's existing work on science communication.
               But as the only undergrad in a lab full of accomplished graduate students, I was always a little scared of trying to pitch my own ideas. Luckily, the opportunity sort of presented itself when we all wanted to work on a fun summer lab project.
             </p>
             <p>
-              I thought long and hard about how people consume content nowadays. I realized that one primary way that people receive information is just through social media (read: addictive short-form videos on tiktok).
+              I thought long and hard about how people consume content nowadays.
 
-              While most people don't read academic papers in their free time, people watch short-form videos that are designed to be engaging in all the best (and worst) ways possible in their free time.
+              What do most people do in their free time? Watch short-form videos (read: addictive TikToks). While most people don't read academic papers in their free time, people love short-form videos that are designed to be engaging in all the best (and worst) ways possible.
               I also saw some recent video-related work (Papeos, PodReels) that I found inspirational. With that, I pitched my half baked idea:
             </p>
             <div style={{ 
@@ -175,24 +175,42 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
                 quality={100}
                 formats={["auto", "webp", "avif"]}
                 style={{
-                  border: '1px solid #ddd',
-                  borderRadius: '4px'
+                  // border: '1px solid #ddd',
+                  borderRadius: '0px'
                 }}
               />
             </div>
             <p> 
-              While the notes are a bit scrambled, it turns out the idea had some real merit; we quickly all opted for this one.
+              While my notes were very scrambled (there are like 5 different ideas in here), I think I did a better job clearly articulating it in person. It turns out my idea wasn't so crazy. We all opted for this one as the lab project.
               I could never have done it on my own so I'm grateful to my labmates and especially Meziah for taking the lead on this one.
-              I kind of expected some standard R&R pushback, but I really didn't have any doubts about it ultimately getting in. 
-              To be honest, I kind of didn't feel anything when it did, and even if it didn't, I kind of feel like I still wouldn't have felt anything? Maybe it's good to be (sometimes) a bit detatched from your work.
+              Through the submission process, I expected the standard R&R pushback, but I really didn't have any doubts about it ultimately getting in. 
+              To be honest, I kind of didn't feel anything when it did, and even if it didn't, I probably still wouldn't have felt anything? Maybe it's good to sometimes be a bit detached from your work. (is this normal?)
             </p>
             <p>
               Looking back, the idea was pretty much there in my head and almost communicated through my notes. Although not something publishable or interesting research-wise yet.
 
-              I learned that <i>good ideas don't happen in a vacuum</i>. And maybe my bad ideas might still lead to something along the way. 
-
-              If I never thought about speaking up, it might be still stuck in my notes.
+              I learned that <i>good ideas don't ever happen in a vacuum especially when I'm only thinking alone</i>. Maybe my bad ideas might still lead to something along the way. 
             </p>
+            <p>
+              As a final note, crunch time for the deadline was painful but fun. I got some wonderful encouragement from Gary every day on quant analysis, redoing tukey HSD tests, and using my student JMP plan to its full extent. This is how he can publish so many papers each year:
+            </p>
+            <div style={{ 
+              marginTop: 'var(--space-4)', 
+              marginBottom: 'var(--space-4)',
+              maxWidth: '600px',
+              margin: '0 auto'
+            }}>
+              <StaticImage
+                src="../images/gary-encouragement.jpg"
+                alt=""
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                style={{
+                  // border: '1px solid #ddd',
+                  borderRadius: '0px'
+                }}
+              />
+            </div>
           </div>
         )}
         <p class = "publication">
@@ -216,7 +234,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             gap: '12px',
             alignItems: 'center'
           }}>
-            <a href="#" style={{ fontWeight: '400' }}>[pdf coming soon]</a>
+            <a href="#" style={{ fontWeight: '400' }}>[pdf]</a>
             {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
             <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
             <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
@@ -237,6 +255,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
               fontWeight: '500'
             }}
           >
+            behind the scenes
             <FaChevronRight 
               style={{
                 fontSize: '0.8em',
@@ -244,7 +263,6 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
                 transform: btp2 ? 'rotate(90deg)' : 'rotate(0deg)'
               }}
             />
-            behind the scenes
           </button>
         </div>
         {btp2 && (
@@ -257,11 +275,14 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             borderRadius: '0px'
           }}>
             <p>
-              In summer 2024, I wanted to gain some publishable HCI research experience, and I reached out to Chris after looking at some of his prior studies. I was also a bit nervous back then to directly contact professors; PhD students felt more approachable.
-              Luckily Chris is super easy to work with and he is a busy bee: he had numerous projects in progress and I opted to work on this one. The study and data collection was already done during the school year, so my work was a lot of data analysis+python scripting+qualitative coding. 
+              During my freshman year, I had previously worked on an augmented reality project with a PhD student and a few other undergrads. It was a fun experience (and also was my main motivation for transferring into the CS department, but that's another story). 
+              But I soon realized that Jae was the only person doing anything AR-related in the department, and that I should probably be exploring beyond just the CS department due to UW's interdisciplinary strengths in HCI.
+            </p>  
+              <p> So my goal summer 2024, while doing an internship back home, was to gain some publishable HCI research experience. I looked around at a bunch of lab websites and reached out to Chris after checking out some of his prior studies. I was also a bit nervous back then to directly contact professors; PhD students felt much more approachable.
+              I'm glad Chris is super easy to work with and he is a busy bee: he had numerous projects in progress and I opted to work on this one since it sounded the most interesting to me at the time. The study and data collection was already done during the school year, so my work was a lot of data analysis+python scripting+qualitative coding. 
             </p>
             <p>
-              Unfortunately we got soundly rejected from CHI 2025 and C&C 2025. Reviewers wanted to see a stronger output evaluation besides just clients, which was valid but discouraging.
+              Unfortunately we got soundly rejected from CHI 2025 and C&C 2025. What sucked was that reviewers really wanted to see a stronger output evaluation besides just clients, which was valid but discouraging.
               Chris had the great idea to add collaborators (Rock, Katharina) to evaluate on a crowdsourced platform, Labinthewild, to which I deployed the survey with a lot of help from Rock. 
               Though I did not lead this project, this nonetheless was my first time contributing to a paper and understanding the full submission cycle (three times!)
             </p>
