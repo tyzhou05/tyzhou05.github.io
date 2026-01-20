@@ -1,8 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { MdEmail } from 'react-icons/md';
-// import { FaLinkedin, FaGraduationCap, FaHome, FaBlog, FaCameraRetro} from 'react-icons/fa';
-// Import the SVG files
+import { FaChevronRight } from 'react-icons/fa';
 import { ReactComponent as HomeSvg } from "../images/home.svg"
 import { ReactComponent as BlogSvg } from "../images/blog.svg"
 
@@ -15,7 +14,11 @@ import { StaticImage } from "gatsby-plugin-image"
 import { FaSignature, FaBluesky, FaMapLocationDot, FaGithub } from "react-icons/fa6";
 import {FaImages} from "react-icons/fa6";
 
-const IndexPage = () => (
+const IndexPage = () => {
+  const [btp1, setbtp1] = React.useState(false);
+  const [btp2, setbtp2] = React.useState(false);
+
+  return (
   <Layout>
     <Navigation currentPage="home" />
     
@@ -95,6 +98,97 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
           <br></br>
           Meziah Ruby Cristobal*, Hyeonjeong Byeon*, Tze-Yu Chen*, Ruoxi Shang*, Donghoon Shin*, Ruican Zhong*, <b>Tony Zhou</b>*, Gary Hsieh. 
         </p>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginTop: '-10px',
+          marginBottom: 'var(--space-4)',
+          gap: '16px',
+          flexWrap: 'wrap'
+        }}>
+          <div style={{
+            display: 'flex',
+            gap: '12px',
+            alignItems: 'center'
+          }}>
+            <a href="#" style={{ fontWeight: '400' }}>[pdf coming soon]</a>
+            {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
+            <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
+            <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
+          </div>
+          <button 
+            onClick={() => setbtp1(!btp1)}
+            style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              padding: '4px 0',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              color: 'var(--color-primary)',
+              fontSize: 'inherit',
+              fontFamily: 'inherit',
+              fontWeight: '500'
+            }}
+          >
+            <FaChevronRight 
+              style={{
+                fontSize: '0.8em',
+                transition: 'transform 0.2s ease',
+                transform: btp1 ? 'rotate(90deg)' : 'rotate(0deg)'
+              }}
+            />
+            behind the scenes
+          </button>
+        </div>
+        {btp1 && (
+          <>
+            <p>
+              I'm really proud of this paper in a lot of ways. This was an idea I had been broadly thinking about since starting to work with Gary, because I remember the first thing I noticed was Donghoon's line of work focuses on prescriptivity (design cards) for practicioners (designers). 
+              I wondered if there was a way to broaden the scope, even back to Gary's existing work on science communication.
+              But as the only undergrad in a lab full of accomplished graduate students, I never tried to pitch my own ideas. Luckily, the opportunity sort of presented itself when we all wanted to work on a fun summer lab project.
+            </p>
+            <p>
+              I thought about how people consume content nowadays. I realized that one main way that people receive information is just through social media (addictive short-form videos on TikTok/Instagram Reels/YT Shorts).
+
+              While most people don't read academic papers in their free time, people watch short-form videos that are designed to be engaging in all the best (and worst) ways possible in their free time.
+              I also saw some recent video-related work (Papeos, PodReels) that I found inspirational. With that, I pitched my half baked idea:
+            </p>
+            <div style={{ 
+              marginTop: 'var(--space-4)', 
+              marginBottom: 'var(--space-4)',
+              maxWidth: '600px',
+              margin: '0 auto'
+            }}>
+              <StaticImage
+                src="../images/papertoknote.jpg"
+                alt="Notes from notes app about PaperTok idea"
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                // placeholder="blurred"
+                style={{
+                  border: '1px solid #ddd',
+                  borderRadius: '4px'
+                }}
+              />
+            </div>
+            <p> 
+              It turns out the idea had some real merit; we quickly all opted for this one.
+              I could never have done it on my own so I'm grateful to my labmates and especially Meziah for taking the lead on this one.
+              Despite some R&R pushback, I really didn't have any doubts about it getting in.
+            </p>
+            <p>
+              Looking back, the idea was somewhat understandable in my head and pretty much there in my notes. Although most definitely not something publishable yet.
+
+              I learned that <i>good ideas don't happen in a vacuum</i>. And maybe my bad ideas might still lead to something along the way. 
+
+              If I never thought about speaking up, it might be still stuck in my notes.
+              {/* The ultimate paper had a lot of evolving ideas and  */}
+            </p>
+          </>
+        )}
         <p class = "publication">
           [CHI 2026] &nbsp; 
           Decoupling of Usefulness and Novelty: Evaluating the Impact of Generative AI on Design Outputs and Designers' Creative Thinking.
@@ -102,6 +196,64 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
           Yue Fu, <b>Tony Zhou</b>, Bin Han, Marx Wang, Yixin Chen, Zelia Gomes Da Costa Lai, Rock Yuren Pang, Katharina Reinecke, Jacob O.
           Wobbrock, Alexis Hiniker.
         </p>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginTop: '-10px',
+          marginBottom: 'var(--space-4)',
+          gap: '16px',
+          flexWrap: 'wrap'
+        }}>
+          <div style={{
+            display: 'flex',
+            gap: '12px',
+            alignItems: 'center'
+          }}>
+            <a href="#" style={{ fontWeight: '400' }}>[pdf coming soon]</a>
+            {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
+            <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
+            <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
+          </div>
+          <button 
+            onClick={() => setbtp2(!btp2)}
+            style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              padding: '4px 0',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              color: 'var(--color-primary)',
+              fontSize: 'inherit',
+              fontFamily: 'inherit',
+              fontWeight: '500'
+            }}
+          >
+            <FaChevronRight 
+              style={{
+                fontSize: '0.8em',
+                transition: 'transform 0.2s ease',
+                transform: btp2 ? 'rotate(90deg)' : 'rotate(0deg)'
+              }}
+            />
+            behind the scenes
+          </button>
+        </div>
+        {btp2 && (
+          <>
+            <p>
+              In summer 2024, I wanted to gain some publishable HCI research experience, and I reached out to Chris after seeing one of his prior studies. I was also a bit nervous back then to directly contact professors; PhD students felt more approachable.
+              Luckily Chris is a busy bee: he had numerous projects in progress and I opted to work on this one. The study and data collection was already done during the school year, so my work was a lot of data analysis+python scripting+qualitative coding. 
+            </p>
+            <p>
+              Unfortunately we got soundly rejected from CHI 2025 and C&C 2025: reviewers wanted to see a stronger output evaluation besides just clients.
+              Chris had the great idea to add collaborators (Rock, Katharina) to evaluate on a crowdsourced platform, Labinthewild, to which I deployed the survey with a lot of help from Rock. 
+              Though I did not lead this project, this nonetheless was my first time contributing to a paper and understanding the full submission cycle (three times!)
+            </p>
+          </>
+        )}
         {/* <StaticImage
           className = "research-icon"
           src="../images/xxx.jpg"
@@ -139,7 +291,8 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
 
     <hr class="divider"></hr>
   </Layout>
-)
+  );
+};
 
 
 /**
