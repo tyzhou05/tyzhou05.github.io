@@ -63,7 +63,7 @@ const IndexPage = () => {
 
     <div>
       <p>
-        I'm Tony, currently a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a>, but originally from sunny San Jose, California. 
+        from a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a>. Originally from sunny San Jose, CA. 
       </p>
 
       <p>
@@ -76,7 +76,7 @@ const IndexPage = () => {
       </p>
 
       <p>
-        I'm usually at a branch of the Seattle Public Library or exploring a new <a href="https://www.google.com/maps/contrib/106532734994751777840/review">coffee shop</a> when not on campus.
+        When not on campus, I'm exploring a branch of the Seattle Public Library or reviewing a new <a href="https://www.google.com/maps/contrib/106532734994751777840/review">coffee shop</a>.
         
         When I used to have free time, I played chess competitively and worked at the Crags Climbing Center at the UW IMA.
 {/*      
@@ -85,7 +85,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
       </p>
 
       <p>
-        I am always happy to chat, feel free to reach out! :)
+         Always happy to chat. Feel free to reach out! :)
       </p>
 
       {/* <hr>
@@ -112,7 +112,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             gap: '12px',
             alignItems: 'center'
           }}>
-            <a href="#" style={{ fontWeight: '400' }}>[pdf]</a>
+            <a href="/files/papertok.pdf" style={{ fontWeight: '400' }} target="_blank" rel="noreferrer">[pdf]</a>
             {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
             <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
             <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
@@ -152,16 +152,22 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             marginBottom: 'var(--space-3)',
             borderRadius: '0px'
           }}>
+            <p>1/22/2026</p>
             <p>
-              I'm really proud of this project, so it deserves a longer reflection. This was an idea I had been broadly thinking about since starting to work with Gary fall 2024, because I remember the first thing I noticed was Donghoon's line of work focuses on prescriptivity (design cards) for practicioners (designers). 
-              While Donghoon is very smart and it makes sense to go more specific, I wondered if there was a way to broaden the scope, even back to Gary's existing work on science communication.
-              But as the only undergrad in a lab full of accomplished graduate students, I was always a little scared of trying to pitch my own ideas. Luckily, the opportunity sort of presented itself when we all wanted to work on a fun summer lab project.
+              When starting to work with Gary fall 2024, I remember the first thing I noticed was Donghoon's line of work focuses on prescriptivity (design cards) for practicioners (designers). 
+              Donghoon is a smart cookie and it makes sense to go more specific. But I wondered if there was a way to broaden the scope, even back to Gary's existing work on science communication.
+              But as the only undergrad in the lab, I was always a little scared of trying to pitch my own projects. What if my big ideas get shut down quickly?  
+              </p>
+            <p>
+              <u>my pessimistic take:</u> professors are 10x more busy than you think; grad students are focused on publishing their own led projects. if you're not leading a project, no one really has any time or reason to care about you as an undergrad, and, even less so, if you don't have any good ideas or can't prove that you hold any potential value to mentor. 
             </p>
             <p>
+              Luckily, the opportunity sort of presented itself when we all wanted to work on a fun summer lab project.
+
               I thought long and hard about how people consume content nowadays.
 
               What do most people do in their free time? Watch short-form videos (read: addictive TikToks). While most people don't read academic papers in their free time, people love short-form videos that are designed to be engaging in all the best (and worst) ways possible.
-              I also saw some recent video-related work (Papeos, PodReels) that I found inspirational. With that, I pitched my half baked idea:
+              I also saw some recent video-related work (Papeos, PodReels) that I found inspirational. With that, I jotted down some half baked ideas:
             </p>
             <div style={{ 
               marginTop: 'var(--space-4)', 
@@ -181,18 +187,18 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
               />
             </div>
             <p> 
-              While my notes were very scrambled (there are like 5 different ideas in here), I think I did a better job clearly articulating it in person. It turns out my idea wasn't so crazy. We all opted for this one as the lab project.
+              There are like five different ideas in here, but I think I did a better job clearly articulating it in person. It turns out my idea wasn't so crazy. We all opted for this one as the lab project.
               I could never have done it on my own so I'm grateful to my labmates and especially Meziah for taking the lead on this one.
               Through the submission process, I expected the standard R&R pushback, but I really didn't have any doubts about it ultimately getting in. 
               To be honest, I kind of didn't feel anything when it did, and even if it didn't, I probably still wouldn't have felt anything? Maybe it's good to sometimes be a bit detached from your work. (is this normal?)
             </p>
             <p>
-              Looking back, the idea was pretty much there in my head and almost communicated through my notes. Although not something publishable or interesting research-wise yet.
+              Looking back, the idea was pretty much there in my head but still pretty bad in my notes. Although not something publishable or interesting research-wise yet.
 
-              I learned that <i>good ideas don't ever happen in a vacuum especially when I'm only thinking alone</i>. Maybe my bad ideas might still lead to something along the way. 
+              I learned that <i>good ideas don't ever happen in a vacuum</i>. The takeaway is that I shouldn't be so quick to give up; maybe my bad ideas might still lead to something along the way. 
             </p>
             <p>
-              As a final note, crunch time for the deadline was painful but fun. I got some wonderful encouragement from Gary every day on quant analysis, redoing tukey HSD tests, and using my student JMP plan to its full extent. This is how he can publish so many papers each year:
+              Crunch time for the deadline was painful but fun. I got some wonderful encouragement from Gary every day on quant analysis, redoing tukey HSD tests, and using my student JMP plan to its full extent. This is how bossman can publish so many papers each year (this emoji still scares me):
             </p>
             <div style={{ 
               marginTop: 'var(--space-4)', 
@@ -274,6 +280,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             marginBottom: 'var(--space-3)',
             borderRadius: '0px'
           }}>
+            <p>1/20/2026</p>
             <p>
               During my freshman year, I had previously worked on an augmented reality project with a PhD student and a few other undergrads. It was a fun experience (and also was my main motivation for transferring into the CS department, but that's another story). 
               But I soon realized that Jae was the only person doing anything AR-related in the department, and that I should probably be exploring beyond just the CS department due to UW's interdisciplinary strengths in HCI.
@@ -284,7 +291,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             <p>
               Unfortunately we got soundly rejected from CHI 2025 and C&C 2025. What sucked was that reviewers really wanted to see a stronger output evaluation besides just clients, which was valid but discouraging.
               Chris had the great idea to add collaborators (Rock, Katharina) to evaluate on a crowdsourced platform, Labinthewild, to which I deployed the survey with a lot of help from Rock. 
-              Though I did not lead this project, this nonetheless was my first time contributing to a paper and understanding the full submission cycle (three times!)
+              Though I did not lead this project, this nonetheless was my first time contributing to a paper and understanding the full submission cycle (one time? two time? three times!)
             </p>
           </div>
         )}
