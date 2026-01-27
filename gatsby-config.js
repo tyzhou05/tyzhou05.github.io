@@ -9,6 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
+    title: `Tony Zhou`,
     description: `My personal webpage`,
     author: `@tyzhou`,
     siteUrl: `https://tyzhou.com`,
@@ -29,8 +30,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Tony Zhou`,
+        short_name: `Tony Zhou`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website

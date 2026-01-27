@@ -91,6 +91,7 @@ img {
     flex: 1;
     max-width: calc(100% - 220px);
     padding-right: 2rem;
+    margin: 0;
 }
 
 /* Adjust main content to be more left-aligned */

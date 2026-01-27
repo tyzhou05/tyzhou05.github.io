@@ -17,6 +17,7 @@ import {FaImages} from "react-icons/fa6";
 const IndexPage = () => {
   const [btp1, setbtp1] = React.useState(false);
   const [btp2, setbtp2] = React.useState(false);
+  const [btp3, setbtp3] = React.useState(false);
 
   return (
   <Layout>
@@ -55,28 +56,28 @@ const IndexPage = () => {
       </div>
       
       <div className="content-area">
-        <h2>
+        <h2 style={{ marginBottom: '0.5rem' }}>
           hello! 
         </h2>
       </div>
     </div>
 
     <div>
-      <p>
+      {/* <p>
         from a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a>. Originally from sunny San Jose, CA. 
-      </p>
+      </p> */}
 
       <p>
-        At UW, I've been interested in HCI+design. I'm primarily working as an undergrad researcher with <a href = "https://faculty.washington.edu/garyhs/">Gary Hsieh</a> (HCDE) and <a href = "https://homes.cs.washington.edu/~axz/">Amy Zhang</a> (CSE). 
+        I'm a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a> interested in HCI+design. I'm primarily working as an undergrad researcher with <a href = "https://faculty.washington.edu/garyhs/">Gary Hsieh</a> (HCDE) and <a href = "https://homes.cs.washington.edu/~axz/">Amy Zhang</a> (CSE). 
         Over the summers I also collaborate with <a href = "https://dingzeyu.li/">Ding Li</a> (Adobe Research). 
 
-        Research topics I'm thinking about mostly revolve around HCI, science communication, social media, and writing tools. 
+        Ideas I'm currently thinking about revolve around HCI, science communication, and social media.
         
         {/* I'm currently working through <a href = "https://books.google.com/books/about/Sketching_User_Experiences_Getting_the_D.html?id=2vfPxocmLh0C&source=kp_book_description">Sketching User Experiences</a> by Bill Buxton. */}
       </p>
 
       <p>
-        When not on campus, I'm exploring a branch of the Seattle Public Library or reviewing a new <a href="https://www.google.com/maps/contrib/106532734994751777840/review">coffee shop</a>.
+        When not on campus, I'm at a branch of the Seattle Public Library or <a href="https://www.google.com/maps/contrib/106532734994751777840/review">reviewing something new</a>.
         
         When I used to have free time, I played chess competitively and worked at the Crags Climbing Center at the UW IMA.
 {/*      
@@ -85,7 +86,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
       </p>
 
       <p>
-         Always happy to chat. Feel free to reach out! :)
+        Originally from sunny San Jose, CA. Always happy to chat, feel free to reach out! :)
       </p>
 
       {/* <hr>
