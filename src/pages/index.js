@@ -113,7 +113,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             gap: '12px',
             alignItems: 'center'
           }}>
-            <a href="/files/papertok.pdf" style={{ fontWeight: '400' }} target="_blank" rel="noreferrer">[pdf]</a>
+            <a href="https://arxiv.org/pdf/2601.18218" style={{ fontWeight: '400' }} target="_blank" rel="noreferrer">[pdf]</a>
             {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
             <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
             <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
