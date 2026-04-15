@@ -62,16 +62,14 @@ const IndexPage = () => {
     <div>
       <p>
         I'm a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a> 
-        interested in HCI+design. I've primarily been working as an undergrad researcher with 
-        <a href = "https://faculty.washington.edu/garyhs/">Gary Hsieh</a> (HCDE) and <a href = "https://homes.cs.washington.edu/~axz/">Amy Zhang</a> (CSE). 
+        interested in HCI+design. I've primarily been working as an undergrad researcher with <a href = "https://faculty.washington.edu/garyhs/">Gary Hsieh</a> (HCDE) and <a href = "https://homes.cs.washington.edu/~axz/">Amy Zhang</a> (CSE). 
         Over the summers I also collaborate with <a href = "https://dingzeyu.li/">Ding Li</a> (Adobe Research). 
         Projects I'm currently working on revolve around behavior change for design, social media, and LLM-assisted deferral.
         
         {/* I'm currently working through <a href = "https://books.google.com/books/about/Sketching_User_Experiences_Getting_the_D.html?id=2vfPxocmLh0C&source=kp_book_description">Sketching User Experiences</a> by Bill Buxton. */}
       </p>
       <p>
-        When not on campus, I'm at a branch of the Seattle Public Library or 
-        <a href="https://www.google.com/maps/contrib/106532734994751777840/review">reviewing something new</a>.
+        When not on campus, I'm at a branch of the Seattle Public Library or <a href="https://www.google.com/maps/contrib/106532734994751777840/review">reviewing something new</a>.
         When I used to have free time, I played chess competitively and worked at the Crags Climbing Center at the UW IMA.
       </p>
       <p>
