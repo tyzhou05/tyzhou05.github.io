@@ -61,8 +61,7 @@ const IndexPage = () => {
 
     <div>
       <p>
-        I'm a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a> 
-        interested in HCI+design. I've primarily been working as an undergrad researcher with <a href = "https://faculty.washington.edu/garyhs/">Gary Hsieh</a> (HCDE) and <a href = "https://homes.cs.washington.edu/~axz/">Amy Zhang</a> (CSE). 
+        I'm a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a> interested in HCI+design. I've primarily been working as an undergrad researcher with <a href = "https://faculty.washington.edu/garyhs/">Gary Hsieh</a> (HCDE) and <a href = "https://homes.cs.washington.edu/~axz/">Amy Zhang</a> (CSE). 
         Over the summers I also collaborate with <a href = "https://dingzeyu.li/">Ding Li</a> (Adobe Research). 
         Projects I'm currently working on revolve around behavior change for design, social media, and LLM-assisted deferral.
         
