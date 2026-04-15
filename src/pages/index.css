@@ -3,6 +3,57 @@
   margin-bottom: 2rem !important;
 } */
 
+
+.btp {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-primary);
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.btp:hover {
+  opacity: 0.8;
+}
+
+.btp-dropdown {
+  font-size: 0.8em;
+  transition: transform 0.2s ease;
+}
+
+
+.dropdown {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease; /* optional, adds animation */
+}
+
+.dropdown-open {
+  transform: rotate(90deg);
+}
+
+
+.dropdown:hover {
+  opacity: 0.8
+}
+
+
+.highlight-yellow {
+  background-color: #FFFFC5
+}
+
+.highlight-opal {
+  background-color: #ADEBB3;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
 .navbar {
   margin: 2em 0 0 0;
   display: flex;
@@ -30,6 +81,10 @@
     border-radius: 24%;
 }
 
+.courses {
+  /* background-color: black; */
+}
+
 .research {
     margin: 0 0 0 0;
     display: flex;
@@ -39,8 +94,9 @@
   font-size: 12px;
 }
 
-.research-projects {
-  margin-top: 60px;
+.h3-header {
+  /* color: white; */
+  margin-top: 40px;
   font-weight: 600;
   font-size: 12px;
 }
@@ -58,13 +114,12 @@ img {
     display: flex;
     align-items: flex-start;
     gap: 2rem;
-    margin-top: 1rem;
     position: relative;
 }
 
 .profile-image {
     position: absolute;
-    top: 1.5rem;
+    top: 5rem;
     right: 0;
     z-index: 10;
 }
@@ -242,11 +297,14 @@ img {
 } */
 
 .song-title {
-  font-weight: 500;
+  font-weight: 400;
+  /* font-size: 12px; */
 }
 
 .song-artist {
+  /* margin-top: 1em; */
   font-weight: 300;
+  font-size: 10px;
   color: #888;
 }
 

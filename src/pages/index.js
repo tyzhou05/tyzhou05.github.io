@@ -30,8 +30,8 @@ const IndexPage = () => {
           src="../images/pfpsmile.JPG"
           alt="Tony Zhou"
           layout="fixed"
-          width={140}
-          height={140}
+          width={110}
+          height={110}
           quality={100}
           formats={["auto", "webp", "avif"]}
           placeholder="blurred"
@@ -49,42 +49,31 @@ const IndexPage = () => {
           <a href="https://tyzhou.bsky.social" aria-label="Bluesky" target="_blank">
             Bluesky
           </a>
-          {/* <a href="https://www.google.com/maps/contrib/106532734994751777840/reviews" target="_blank">
-            Exploring
-          </a> */}
         </div>
       </div>
       
       <div className="content-area">
-        <h2 style={{ marginBottom: '0.5rem' }}>
-          hello! 
+        <h2 style={{ marginBottom: '0.5rem', marginRight: '575px' }}> {/*backgroundColor: '#0047ab', color: 'white', */}
+          hello!
         </h2>
       </div>
     </div>
 
     <div>
-      {/* <p>
-        from a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a>. Originally from sunny San Jose, CA. 
-      </p> */}
-
       <p>
-        I'm a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a> interested in HCI+design. I'm primarily working as an undergrad researcher with <a href = "https://faculty.washington.edu/garyhs/">Gary Hsieh</a> (HCDE) and <a href = "https://homes.cs.washington.edu/~axz/">Amy Zhang</a> (CSE). 
+        I'm a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a> 
+        interested in HCI+design. I've primarily been working as an undergrad researcher with 
+        <a href = "https://faculty.washington.edu/garyhs/">Gary Hsieh</a> (HCDE) and <a href = "https://homes.cs.washington.edu/~axz/">Amy Zhang</a> (CSE). 
         Over the summers I also collaborate with <a href = "https://dingzeyu.li/">Ding Li</a> (Adobe Research). 
-
-        Ideas I'm currently thinking about revolve around HCI, science communication, and social media.
+        Projects I'm currently working on revolve around behavior change for design, social media, and LLM-assisted deferral.
         
         {/* I'm currently working through <a href = "https://books.google.com/books/about/Sketching_User_Experiences_Getting_the_D.html?id=2vfPxocmLh0C&source=kp_book_description">Sketching User Experiences</a> by Bill Buxton. */}
       </p>
-
       <p>
-        When not on campus, I'm at a branch of the Seattle Public Library or <a href="https://www.google.com/maps/contrib/106532734994751777840/review">reviewing something new</a>.
-        
+        When not on campus, I'm at a branch of the Seattle Public Library or 
+        <a href="https://www.google.com/maps/contrib/106532734994751777840/review">reviewing something new</a>.
         When I used to have free time, I played chess competitively and worked at the Crags Climbing Center at the UW IMA.
-{/*      
-This quarter I've been doing my best to understand proper houseplant care: my monstera deliciosa is slowly taking over my window, yet my n'joy pothos has not grown since I bought it.    
-        Recently I've been reviewing spots around Seattle <a href = "https://www.google.com/maps/contrib/106532734994751777840/photos/data=!4m3!8m2!3m1!1e1?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D">in my free time</a>. */}
       </p>
-
       <p>
         Originally from sunny San Jose, CA. Always happy to chat, feel free to reach out! :)
       </p>
@@ -92,7 +81,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
       {/* <hr>
       </hr> */}
 
-      <h3 class="research-projects">PROJECTS</h3>
+      <h3 class="h3-header">PROJECTS</h3>
         <p class = "publication">
           [CHI 2026] &nbsp; 
           PaperTok: Exploring the Use of Generative AI for Creating Short-Form Videos for Research Communication.
@@ -113,26 +102,14 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             gap: '12px',
             alignItems: 'center'
           }}>
-            <a href="https://arxiv.org/pdf/2601.18218" style={{ fontWeight: '400' }} target="_blank" rel="noreferrer">[pdf]</a>
+            <a href="https://dl.acm.org/doi/pdf/10.1145/3772318.3790553" style={{ fontWeight: '400' }} target="_blank" rel="noreferrer">[pdf]</a>
             {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
             <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
             <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
           </div>
           <button 
             onClick={() => setbtp1(!btp1)}
-            style={{
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              padding: '4px 0',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              color: 'var(--color-primary)',
-              fontSize: 'inherit',
-              fontFamily: 'inherit',
-              fontWeight: '500'
-            }}
+            className="btp"
           >
             behind the scenes
             <FaChevronRight 
@@ -220,6 +197,7 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             </div>
           </div>
         )}
+
         <p class = "publication">
           [CHI 2026] &nbsp; 
           Decoupling of Usefulness and Novelty: Evaluating the Impact of Generative AI on Design Outputs and Designers' Creative Thinking.
@@ -241,26 +219,14 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
             gap: '12px',
             alignItems: 'center'
           }}>
-            <a href="#" style={{ fontWeight: '400' }}>[pdf]</a>
+            <a href="https://dl.acm.org/doi/pdf/10.1145/3772318.3791329" target="_blank" style={{ fontWeight: '400' }}>[pdf]</a>
             {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
             <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
             <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
           </div>
           <button 
             onClick={() => setbtp2(!btp2)}
-            style={{
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              padding: '4px 0',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              color: 'var(--color-primary)',
-              fontSize: 'inherit',
-              fontFamily: 'inherit',
-              fontWeight: '500'
-            }}
+            className="btp"
           >
             behind the scenes
             <FaChevronRight 
@@ -307,6 +273,94 @@ This quarter I've been doing my best to understand proper houseplant care: my mo
           placeholder="blurred"
         /> */}
       {/* </div> */}
+
+      {/* <h3>test</h3> */}
+
+       <p class = "publication">
+          [CHI EA 2026] &nbsp; 
+          Behind The Paper: A Workflow for Supporting Personal Research Reflection
+          <br></br>
+          <b>Tony Zhou</b>, Tao Long, Gary Hsieh, Dingzeyu Li. 
+        </p>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginTop: '-10px',
+          marginBottom: 'var(--space-4)',
+          gap: '16px',
+          flexWrap: 'wrap'
+        }}>
+          <div style={{
+            display: 'flex',
+            gap: '12px',
+            alignItems: 'center'
+          }}>
+            <a href="https://dl.acm.org/doi/pdf/10.1145/3772363.3798731" style={{ fontWeight: '400' }} target="_blank" rel="noreferrer">[pdf]</a>
+            {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
+            <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
+            <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
+          </div>
+          <button 
+            onClick={() => setbtp3(!btp3)}
+            className="btp"
+          >
+            behind the scenes
+            <FaChevronRight 
+              style={{
+                fontSize: '0.8em',
+                transition: 'transform 0.2s ease',
+                transform: btp3 ? 'rotate(90deg)' : 'rotate(0deg)'
+              }}
+            />
+          </button>
+        </div>
+        {btp3 && (
+          <div style={{
+            background: '#2a2a2a',
+            color: '#ffffff',
+            padding: 'var(--space-5)',
+            marginTop: 'var(--space-3)',
+            marginBottom: 'var(--space-3)',
+            borderRadius: '0px'
+          }}>
+            <p>4/15/2026</p>
+            <p>
+              Today I'm finally writing about the project that inspired this feature on my website!
+              This is actually the first full project I led from start to finish, so this might be a long one.
+              Last summer, I was looking for a different project to work on, and I was very interested in Ding's recent short-form video work (prelude); 
+              so I reached out to introduce myself and collaborate. 
+              However it turns out that Ding's interests weren't exactly in short-form content anymore. 
+              We actually brainstormed plenty of ideas on long-form content instead, and landed on reflective blogging.
+            </p>
+            <p>
+              I remember we were super excited at first because I do think this is a well-motivated problem that hasn't quite been solved yet.
+              But as it grew on there were a few things that kept slowing things down.
+              For example, I didn't really consider that there are a million AI-assisted writing tools nowadays. 
+              And that nothing really stood out from the improvements I'd try to make to the prototype week by week.
+              Trying to position our idea as focusing on reflection was really really really difficult to pull off.
+              I eventually got a bit sick of the project since it had dragged on for so long since the summer ended and I felt like I was wasting everyone's time a bit
+              and decided to submit current progress as a poster.
+            </p>
+            <p>
+              To be honest I also feel like I kind of failed our interviewees.
+              They were also super excited by the idea and were very interested in this potential direction; I really want to thank them for their time.
+              But did I do a good enough job?
+            </p> 
+            <p>
+              I learned that proper problem formulation, motivation, reviewing related work before jumping in is <u>ab-so-lute-ly</u> critical.
+              listening to the talks at CHI I get a bit intimidated by how deeply these presenters have thought 
+              about their work and how it seems like they actually made extremely thorough, strong, fruitful contributions.
+              
+              A small part of me wishes that I spent that time working on something else. Or that I worked harder. 
+              Maybe if I did a better job it could have really been a full paper. Who knows?
+            </p>
+            <p>
+              Something I'm also struggling with in a related vein these days is really making up my mind on if I want to go to grad school or not. 
+              I think there's a world where I could be an okay grad student. But not confident I can be a great one... still indecisive.
+            </p>
+          </div>
+        )}
       
 
       {/* <hr></hr>

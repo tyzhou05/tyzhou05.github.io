@@ -74,7 +74,7 @@ const NowPlaying = () => {
                 style={{ display: 'flex', flexDirection: 'column', gap: '2px', textAlign: 'left', marginTop: '14px'}}
               >
                 <span className="song-title">{track.title}</span>
-                <span className="song-artist">by {track.artist}</span>
+                <span className="song-artist">{track.artist}</span>
               </a>
             </div>
           ))}
