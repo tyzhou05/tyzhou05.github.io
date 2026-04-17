@@ -30,7 +30,7 @@ const IndexPage = () => {
           src="../images/pfpsmile.JPG"
           alt="Tony Zhou"
           layout="fixed"
-          width={110}
+          width={100}
           height={110}
           quality={100}
           formats={["auto", "webp", "avif"]}
@@ -80,10 +80,10 @@ const IndexPage = () => {
 
       <h3 class="h3-header">PROJECTS</h3>
         <p class = "publication">
-          [CHI 2026] &nbsp; 
+          {/* <span class="conference">CHI 2026</span> &nbsp;  */}
           PaperTok: Exploring the Use of Generative AI for Creating Short-Form Videos for Research Communication.
           <br></br>
-          Meziah Ruby Cristobal*, Hyeonjeong Byeon*, Tze-Yu Chen*, Ruoxi Shang*, Donghoon Shin*, Ruican Zhong*, <b>Tony Zhou</b>*, Gary Hsieh. 
+          Meziah Ruby Cristobal*, Hyeonjeong Byeon*, Tze-Yu Chen*, Ruoxi Shang*, Donghoon Shin*, Ruican Zhong*, <b>Tony Zhou</b>*, Gary Hsieh. <span class="conference">CHI 2026.</span>
         </p>
         <div style={{
           display: 'flex',
@@ -196,11 +196,11 @@ const IndexPage = () => {
         )}
 
         <p class = "publication">
-          [CHI 2026] &nbsp; 
+          {/* <span class="conference">CHI 2026</span> &nbsp;  */}
           Decoupling of Usefulness and Novelty: Evaluating the Impact of Generative AI on Design Outputs and Designers' Creative Thinking.
           <br></br>
           Yue (Chris) Fu, <b>Tony Zhou</b>, Bin Han, Marx Wang, Yixin Chen, Zelia Gomes Da Costa Lai, Rock Yuren Pang, Katharina Reinecke, Jacob O.
-          Wobbrock, Alexis Hiniker.
+          Wobbrock, Alexis Hiniker. <span class="conference">CHI 2026.</span>
         </p>
         <div style={{
           display: 'flex',
@@ -274,10 +274,10 @@ const IndexPage = () => {
       {/* <h3>test</h3> */}
 
        <p class = "publication">
-          [CHI EA 2026] &nbsp; 
-          Behind The Paper: A Workflow for Supporting Personal Research Reflection
+          {/* <span class="conference">CHI EA 2026</span> &nbsp;  */}
+          Behind The Paper: A Workflow for Supporting Personal Research Reflection.
           <br></br>
-          <b>Tony Zhou</b>, Tao Long, Gary Hsieh, Dingzeyu Li. 
+          <b>Tony Zhou</b>, Tao Long, Gary Hsieh, Dingzeyu Li. <span class="conference">CHI EA 2026.</span>
         </p>
         <div style={{
           display: 'flex',
