@@ -31,7 +31,7 @@ const IndexPage = () => {
           alt="Tony Zhou"
           layout="fixed"
           width={100}
-          height={110}
+          height={100}
           quality={100}
           formats={["auto", "webp", "avif"]}
           placeholder="blurred"
