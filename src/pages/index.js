@@ -53,7 +53,7 @@ const IndexPage = () => {
       </div>
       
       <div className="content-area">
-        <h2 style={{ marginBottom: '0.5rem', marginRight: '575px' }}> {/*backgroundColor: '#0047ab', color: 'white', */}
+        <h2 style={{ marginBottom: '0.5rem'}}> {/*backgroundColor: '#0047ab', color: 'white', */}
           hello!
         </h2>
       </div>
