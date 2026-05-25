@@ -55,7 +55,9 @@ const Layout = ({ children }) => {
         >
           <NowPlaying />
           <span>
-              last updated April 2026.
+              {/* font: Manrope */}
+              {/* design: Figma */}
+              last updated May 2026.
           </span>
         </footer>
       </div>

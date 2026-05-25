@@ -36,7 +36,10 @@ const IndexPage = () => {
           formats={["auto", "webp", "avif"]}
           placeholder="blurred"
         />
-        <div style={{ textAlign: 'right', marginTop: '8px', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0px' }}>
+        <div style={{ textAlign: 'right', marginTop: '8px', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0px', fontSize: '1em'}}>
+          <a href="https://tyzhou.bsky.social" aria-label="Bluesky" target="_blank">
+            Bluesky
+          </a>
           <a href="mailto:tyzhou05@uw.edu" aria-label="Email">
             Email
           </a>
@@ -46,14 +49,11 @@ const IndexPage = () => {
           {/* <a href="https://github.com/tyzhou05" target="_blank">
             GitHub
           </a> */}
-          <a href="https://tyzhou.bsky.social" aria-label="Bluesky" target="_blank">
-            Bluesky
-          </a>
         </div>
       </div>
       
       <div className="content-area">
-        <h2 style={{ marginBottom: '0.5rem'}}> {/*backgroundColor: '#0047ab', color: 'white', */}
+        <h2 style={{ fontSize: '2em', marginBottom: '-0.6rem', letterSpacing:'-1.2px'}}> {/*backgroundColor: '#0047ab', color: 'white', */}
           hello!
         </h2>
       </div>
@@ -68,12 +68,9 @@ const IndexPage = () => {
         {/* I'm currently working through <a href = "https://books.google.com/books/about/Sketching_User_Experiences_Getting_the_D.html?id=2vfPxocmLh0C&source=kp_book_description">Sketching User Experiences</a> by Bill Buxton. */}
       </p>
       <p>
-        When not on campus, I'm at a branch of the Seattle Public Library or <a href="https://www.google.com/maps/contrib/106532734994751777840/review">reviewing something new</a>.
-        When I used to have free time, I played chess competitively and worked at the Crags Climbing Center at the UW IMA.
+        Originally from sunny San Jose, CA. When not on campus, I'm at a branch of the Seattle Public Library or <a href="https://www.google.com/maps/contrib/106532734994751777840/review">exploring something new</a>.
       </p>
-      <p>
-        Originally from sunny San Jose, CA. Always happy to chat, feel free to reach out! :)
-      </p>
+      <p>Always happy to chat, feel free to reach out! :)</p>
 
       {/* <hr>
       </hr> */}

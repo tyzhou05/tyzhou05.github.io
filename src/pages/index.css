@@ -53,8 +53,9 @@
   /* font-weight: 400 */
 }
 
-.highlight-opal {
-  background-color: #ADEBB3;
+.highlight-yellow {
+  /* background-color: #ADEBB3; */
+  background-color: #ffffc5;
   padding-left: 2px;
   padding-right: 2px;
 }
