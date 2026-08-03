@@ -15,7 +15,7 @@ import Header from "./header"
 import NowPlaying from "./NowPlaying"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, minimal = false }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -34,32 +34,34 @@ const Layout = ({ children }) => {
           rel="stylesheet"
         />
       </Helmet>
-      <Header siteTitle/>
+      {!minimal && <Header siteTitle/>}
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: `min(60%, 1000px)`,
-          padding: `var(--size-gutter)`,
+          maxWidth: minimal ? `min(70%, 820px)` : `min(60%, 1000px)`,
+          padding: minimal ? `2.5rem var(--size-gutter) 3rem` : `var(--size-gutter)`,
+          minHeight: minimal ? `100vh` : undefined,
+          boxSizing: `border-box`,
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-2)`,
-            fontSize: `var(--font-sm)`,
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'flex-start',
-            gap: `var(--space-3)`,
-          }}
-        >
-          <NowPlaying />
-          <span>
-              {/* font: Manrope */}
-              {/* design: Figma */}
-              last updated May 2026.
-          </span>
-        </footer>
+        {!minimal && (
+          <footer
+            style={{
+              marginTop: `var(--space-2)`,
+              fontSize: `var(--font-sm)`,
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'flex-start',
+              gap: `var(--space-3)`,
+            }}
+          >
+            <NowPlaying />
+            <span>
+                last updated May 2026.
+            </span>
+          </footer>
+        )}
       </div>
     </>
   )

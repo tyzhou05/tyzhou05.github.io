@@ -1,28 +1,79 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { MdEmail } from 'react-icons/md';
-import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
-import { ReactComponent as HomeSvg } from "../images/home.svg"
-import { ReactComponent as BlogSvg } from "../images/blog.svg"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import Navigation from "../components/Navigation"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
-import css from "./index.css"
-import { StaticImage } from "gatsby-plugin-image"
-import { FaSignature, FaBluesky, FaMapLocationDot, FaGithub } from "react-icons/fa6";
-import {FaImages} from "react-icons/fa6";
+import "./index.css"
 
 const IndexPage = () => {
-  const [btp1, setbtp1] = React.useState(false);
-  const [btp2, setbtp2] = React.useState(false);
-  const [btp3, setbtp3] = React.useState(false);
-
   return (
-  <Layout>
+  <Layout minimal>
+    <div className="home-minimal">
+      <section className="home-top">
+        <div className="home-row">
+          <div className="home-label">About</div>
+          <div className="home-body">
+            <p>Hi! I'm a senior studying computer science<br></br> at the University of Washington. <br></br>interested in HCI+design.</p>
+            <p>I'm graduating June 2027 and looking for<br></br><span class="highlight-yellow">a new grad SWE position.</span></p>
+            {/* <p>Fun fact: I'm 100% Cantonese but 75% Hakka and 25% Dongbei. 
+              <br></br>I listened to three dialects growing up and resulted in 
+              <br></br>fluency in fourth grade level Mandarin.
+            </p> */}
+            {/* <p>I've also recently been training for a half marathon. <br></br>To keep myself sane, I've been listening to plenty of benee, HOAX, and Keane.</p> */}
+            <p>Always happy to chat. Feel free to reach out :)</p>
+          </div>
+        </div>
+        <div className="home-row">
+          <div className="home-label">Contact</div>
+          <div className="home-body">
+            <a href="mailto:tyzhou05@gmail.com">tyzhou05@gmail.com</a>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-bottom">
+        <div className="home-col home-col-left">
+          <div className="home-section-title">EXPERIENCE</div>
+          <p><b>UW HCDE</b> &ensp;Undergraduate Researcher</p>
+          <p><b>UW CSE</b> &ensp;Undergraduate Researcher</p>
+        </div>
+
+
+        <div className="home-col home-col-right">
+          <div className="home-section-title">COURSEWORK</div>
+          <ul className="home-course-list">
+            <li><b>CSE 447</b> &ensp;Natural Language Processing</li>
+            <li><b>CSE 442</b> &ensp;Data Visualization</li>
+            <li><b>CSE 440</b> &ensp;Human-Computer Interaction</li>
+            <li><b>CSE 421</b> &ensp;Algorithms</li>
+            <li><b>CSE 332</b> &ensp;Data Structures and Parallelism</li>
+            <li><b>CSE 331</b> &ensp;Software Design and Development</li>
+            <li><b>HCDE 308</b> &ensp;Visual Communication Design</li>
+          </ul>
+        </div>
+        
+      </section>
+
+      {/* <div className="home-signature">
+        <StaticImage
+          className="home-avatar"
+          src="../images/pfpsmile.JPG"
+          alt="Tony Zhou"
+          layout="fixed"
+          width={48}
+          height={48}
+          quality={100}
+          formats={["auto", "webp", "avif"]}
+          placeholder="blurred"
+        />
+        <div className="home-name">Tony Zhou</div>
+      </div> */}
+
+    </div>
+
+    {/*
     <Navigation currentPage="home" />
-    
+
     <div className="main-container">
       <div className="profile-image">
         <StaticImage
@@ -43,17 +94,11 @@ const IndexPage = () => {
           <a href="mailto:tyzhou05@uw.edu" aria-label="Email">
             Email
           </a>
-          {/* <a href="https://scholar.google.com/citations?user=S4zK_nsAAAAJ&hl=en" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
-            Scholar
-          </a> */}
-          {/* <a href="https://github.com/tyzhou05" target="_blank">
-            GitHub
-          </a> */}
         </div>
       </div>
-      
+
       <div className="content-area">
-        <h2 style={{ fontSize: '2em', marginBottom: '-0.6rem', letterSpacing:'-1.2px'}}> {/*backgroundColor: '#0047ab', color: 'white', */}
+        <h2 style={{ fontSize: '2em', marginBottom: '-0.6rem', letterSpacing:'-1.2px'}}>
           hello!
         </h2>
       </div>
@@ -61,355 +106,23 @@ const IndexPage = () => {
 
     <div>
       <p>
-        I'm a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a> interested in HCI+design. I've primarily been working as an undergrad researcher with <a href = "https://faculty.washington.edu/garyhs/">Gary Hsieh</a> (HCDE) and <a href = "https://homes.cs.washington.edu/~axz/">Amy Zhang</a> (CSE). 
-        Over the summers I also collaborate with <a href = "https://dingzeyu.li/">Ding Li</a> (Adobe Research). 
-        Projects I'm currently working on revolve around behavior change for design, social media, and LLM-assisted deferral.
-        
-        {/* I'm currently working through <a href = "https://books.google.com/books/about/Sketching_User_Experiences_Getting_the_D.html?id=2vfPxocmLh0C&source=kp_book_description">Sketching User Experiences</a> by Bill Buxton. */}
-      </p>
-      <p>
+        I'm a junior studying computer science at the <a href = "https://cs.washington.edu">University of Washington</a> interested in HCI+design.
         Originally from sunny San Jose, CA. When not on campus, I'm at a branch of the Seattle Public Library or <a href="https://www.google.com/maps/contrib/106532734994751777840/review">exploring something new</a>.
       </p>
-      <p>Always happy to chat, feel free to reach out! :)</p>
-
-      {/* <hr>
-      </hr> */}
+      <p><span class="highlight-yellow">I'm graduating June 2027 and looking for new grad software engineer roles.</span> Always happy to chat, feel free to reach out! :)</p>
 
       <h3 class="h3-header">PROJECTS</h3>
         <p class = "publication">
-          {/* <span class="conference">CHI 2026</span> &nbsp;  */}
           PaperTok: Exploring the Use of Generative AI for Creating Short-Form Videos for Research Communication.
           <br></br>
           Meziah Ruby Cristobal*, Hyeonjeong Byeon*, Tze-Yu Chen*, Ruoxi Shang*, Donghoon Shin*, Ruican Zhong*, <b>Tony Zhou</b>*, Gary Hsieh. <span class="conference">CHI 2026.</span>
         </p>
-        <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginTop: '-10px',
-          marginBottom: 'var(--space-4)',
-          gap: '16px',
-          flexWrap: 'wrap'
-        }}>
-          <div style={{
-            display: 'flex',
-            gap: '12px',
-            alignItems: 'center'
-          }}>
-            <a href="https://dl.acm.org/doi/pdf/10.1145/3772318.3790553" style={{ fontWeight: '400' }} target="_blank" rel="noreferrer">[pdf]</a>
-            {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
-            <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
-            <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
-          </div>
-          <button 
-            onClick={() => setbtp1(!btp1)}
-            className="btp"
-          >
-            behind the scenes
-            <FaChevronRight 
-              style={{
-                fontSize: '0.8em',
-                transition: 'transform 0.2s ease',
-                transform: btp1 ? 'rotate(90deg)' : 'rotate(0deg)'
-              }}
-            />
-          </button>
-        </div>
-        {btp1 && (
-          <div style={{
-            background: '#2a2a2a',
-            color: '#ffffff',
-            padding: 'var(--space-5)',
-            marginTop: 'var(--space-3)',
-            marginBottom: 'var(--space-3)',
-            borderRadius: '0px'
-          }}>
-            <p>1/22/2026</p>
-            <p>
-              When starting to work with Gary fall 2024, I remember the first thing I noticed was Donghoon's line of work focuses on prescriptivity (design cards) for practicioners (designers). 
-              Donghoon is a smart cookie and it makes sense to go more specific. But I wondered if there was a way to broaden the scope, even back to Gary's existing work on science communication.
-              But as the only undergrad in the lab, I was always a little scared of trying to pitch my own projects. What if my big ideas get shut down quickly?  
-              </p>
-            <p>
-              <u>my pessimistic take:</u> professors are 10x more busy than you think; grad students are focused on publishing their own led projects. if you're not leading a project, no one really has any time or reason to care about you as an undergrad, and, even less so, if you don't have any good ideas or can't prove that you hold any potential value to mentor. 
-            </p>
-            <p>
-              Luckily, the opportunity sort of presented itself when we all wanted to work on a fun summer lab project.
-
-              I thought long and hard about how people consume content nowadays.
-
-              What do most people do in their free time? Watch short-form videos (read: addictive TikToks). While most people don't read academic papers in their free time, people love short-form videos that are designed to be engaging in all the best (and worst) ways possible.
-              I also saw some recent video-related work (Papeos, PodReels) that I found inspirational. With that, I jotted down some half baked ideas:
-            </p>
-            <div style={{ 
-              marginTop: 'var(--space-4)', 
-              marginBottom: 'var(--space-4)',
-              maxWidth: '600px',
-              margin: '0 auto'
-            }}>
-              <StaticImage
-                src="../images/papertoknote.jpg"
-                alt="Notes from notes app about PaperTok idea"
-                quality={100}
-                formats={["auto", "webp", "avif"]}
-                style={{
-                  // border: '1px solid #ddd',
-                  borderRadius: '0px'
-                }}
-              />
-            </div>
-            <p> 
-              There are like five different ideas in here, but I think I did a better job clearly articulating it in person. It turns out my idea wasn't so crazy. We all opted for this one as the lab project.
-              I could never have done it on my own so I'm grateful to my labmates and especially Meziah for taking the lead on this one.
-              Through the submission process, I expected the standard R&R pushback, but I really didn't have any doubts about it ultimately getting in. 
-              To be honest, I kind of didn't feel anything when it did, and even if it didn't, I probably still wouldn't have felt anything? Maybe it's good to sometimes be a bit detached from your work. (is this normal?)
-            </p>
-            <p>
-              Looking back, the idea was pretty much there in my head but still pretty bad in my notes. Although not something publishable or interesting research-wise yet.
-
-              I learned that <i>good ideas don't ever happen in a vacuum</i>. The takeaway is that I shouldn't be so quick to give up; maybe my bad ideas might still lead to something along the way. 
-            </p>
-            <p>
-              Crunch time for the deadline was painful but fun. I got some wonderful encouragement from Gary every day on quant analysis, redoing tukey HSD tests, and using my student JMP plan to its full extent. This is how bossman can publish so many papers each year (this emoji still scares me):
-            </p>
-            <div style={{ 
-              marginTop: 'var(--space-4)', 
-              marginBottom: 'var(--space-4)',
-              maxWidth: '600px',
-              margin: '0 auto'
-            }}>
-              <StaticImage
-                src="../images/gary-encouragement.jpg"
-                alt=""
-                quality={100}
-                formats={["auto", "webp", "avif"]}
-                style={{
-                  // border: '1px solid #ddd',
-                  borderRadius: '0px'
-                }}
-              />
-            </div>
-          </div>
-        )}
-
-        <p class = "publication">
-          {/* <span class="conference">CHI 2026</span> &nbsp;  */}
-          Decoupling of Usefulness and Novelty: Evaluating the Impact of Generative AI on Design Outputs and Designers' Creative Thinking.
-          <br></br>
-          Yue (Chris) Fu, <b>Tony Zhou</b>, Bin Han, Marx Wang, Yixin Chen, Zelia Gomes Da Costa Lai, Rock Yuren Pang, Katharina Reinecke, Jacob O.
-          Wobbrock, Alexis Hiniker. <span class="conference">CHI 2026.</span>
-        </p>
-        <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginTop: '-10px',
-          marginBottom: 'var(--space-4)',
-          gap: '16px',
-          flexWrap: 'wrap'
-        }}>
-          <div style={{
-            display: 'flex',
-            gap: '12px',
-            alignItems: 'center'
-          }}>
-            <a href="https://dl.acm.org/doi/pdf/10.1145/3772318.3791329" target="_blank" style={{ fontWeight: '400' }}>[pdf]</a>
-            {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
-            <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
-            <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
-          </div>
-          <button 
-            onClick={() => setbtp2(!btp2)}
-            className="btp"
-          >
-            behind the scenes
-            <FaChevronRight 
-              style={{
-                fontSize: '0.8em',
-                transition: 'transform 0.2s ease',
-                transform: btp2 ? 'rotate(90deg)' : 'rotate(0deg)'
-              }}
-            />
-          </button>
-        </div>
-        {btp2 && (
-          <div style={{
-            background: '#2a2a2a',
-            color: '#ffffff',
-            padding: 'var(--space-5)',
-            marginTop: 'var(--space-3)',
-            marginBottom: 'var(--space-3)',
-            borderRadius: '0px'
-          }}>
-            <p>1/20/2026</p>
-            <p>
-              During my freshman year, I had previously worked on an augmented reality project with a PhD student and a few other undergrads. It was a fun experience (and also was my main motivation for transferring into the CS department, but that's another story). 
-              But I soon realized that Jae was the only person doing anything AR-related in the department, and that I should probably be exploring beyond just the CS department due to UW's interdisciplinary strengths in HCI.
-            </p>  
-              <p> So my goal summer 2024, while doing an internship back home, was to gain some publishable HCI research experience. I looked around at a bunch of lab websites and reached out to Chris after checking out some of his prior studies. I was also a bit nervous back then to directly contact professors; PhD students felt much more approachable.
-              I'm glad Chris is super easy to work with and he is a busy bee: he had numerous projects in progress and I opted to work on this one since it sounded the most interesting to me at the time. The study and data collection was already done during the school year, so my work was a lot of data analysis+python scripting+qualitative coding. 
-            </p>
-            <p>
-              Unfortunately we got soundly rejected from CHI 2025 and C&C 2025. What sucked was that reviewers really wanted to see a stronger output evaluation besides just clients, which was valid but discouraging.
-              Chris had the great idea to add collaborators (Rock, Katharina) to evaluate on a crowdsourced platform, Labinthewild, to which I deployed the survey with a lot of help from Rock. 
-              Though I did not lead this project, this nonetheless was my first time contributing to a paper and understanding the full submission cycle (one time? two time? three times!)
-            </p>
-          </div>
-        )}
-        {/* <StaticImage
-          className = "research-icon"
-          src="../images/xxx.jpg"
-          alt="icon"
-          width={128}
-          height={128}
-          quality={100}
-          formats={["auto", "webp", "avif"]}
-          placeholder="blurred"
-        /> */}
-      {/* </div> */}
-
-      {/* <h3>test</h3> */}
-
-       <p class = "publication">
-          {/* <span class="conference">CHI EA 2026</span> &nbsp;  */}
-          Behind The Paper: A Workflow for Supporting Personal Research Reflection.
-          <br></br>
-          <b>Tony Zhou</b>, Tao Long, Gary Hsieh, Dingzeyu Li. <span class="conference">CHI EA 2026.</span>
-        </p>
-        <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginTop: '-10px',
-          marginBottom: 'var(--space-4)',
-          gap: '16px',
-          flexWrap: 'wrap'
-        }}>
-          <div style={{
-            display: 'flex',
-            gap: '12px',
-            alignItems: 'center'
-          }}>
-            <a href="https://dl.acm.org/doi/pdf/10.1145/3772363.3798731" style={{ fontWeight: '400' }} target="_blank" rel="noreferrer">[pdf]</a>
-            {/* <a href="#" style={{ fontWeight: '400' }}>[html]</a>
-            <a href="#" style={{ fontWeight: '400' }}>[arxiv]</a>
-            <a href="#" style={{ fontWeight: '400' }}>[code]</a> */}
-          </div>
-          <button 
-            onClick={() => setbtp3(!btp3)}
-            className="btp"
-          >
-            behind the scenes
-            <FaChevronRight 
-              style={{
-                fontSize: '0.8em',
-                transition: 'transform 0.2s ease',
-                transform: btp3 ? 'rotate(90deg)' : 'rotate(0deg)'
-              }}
-            />
-          </button>
-        </div>
-        {btp3 && (
-          <div style={{
-            background: '#2a2a2a',
-            color: '#ffffff',
-            padding: 'var(--space-5)',
-            marginTop: 'var(--space-3)',
-            marginBottom: 'var(--space-3)',
-            borderRadius: '0px'
-          }}>
-            <p>4/15/2026</p>
-            <p>
-              Today I'm finally writing about the project that inspired this feature on my website!
-              This is actually the first full project I led from start to finish, so this might be a long one.
-              Last summer, I was looking for a different project to work on, and I was very interested in Ding's recent short-form video work (prelude); 
-              so I reached out to introduce myself and collaborate. 
-              However it turns out that Ding's interests weren't exactly in short-form content anymore. 
-              We actually brainstormed plenty of ideas on long-form content instead, and landed on reflective blogging.
-            </p>
-            <p>
-              I remember we were super excited at first because I do think this is a well-motivated problem that hasn't quite been solved yet.
-              But as it grew on there were a few things that kept slowing things down.
-              For example, I didn't really consider that there are a million AI-assisted writing tools nowadays. 
-              And that nothing really stood out from the improvements I'd try to make to the prototype week by week.
-              Trying to position our idea as focusing on reflection was really really really difficult to pull off.
-              I eventually got a bit sick of the project since it had dragged on for so long since the summer ended and I felt like I was wasting everyone's time a bit
-              and decided to submit current progress as a poster.
-            </p>
-            <p>
-              To be honest I also feel like I kind of failed our interviewees.
-              They were also super excited by the idea and were very interested in this potential direction; I really want to thank them for their time.
-              But did I do a good enough job?
-            </p> 
-            <p>
-              I learned that proper problem formulation, motivation, reviewing related work before jumping in is <u>ab-so-lute-ly</u> critical.
-              listening to the talks at CHI I get a bit intimidated by how deeply these presenters have thought 
-              about their work and how it seems like they actually made extremely thorough, strong, fruitful contributions.
-              
-              A small part of me wishes that I spent that time working on something else. Or that I worked harder. 
-              Maybe if I did a better job it could have really been a full paper. Who knows?
-            </p>
-            <p>
-              Something I'm also struggling with in a related vein these days is really making up my mind on if I want to go to grad school or not. 
-              I think there's a world where I could be an okay grad student. But not confident I can be a great one... still indecisive.
-            </p>
-          </div>
-        )}
-      
-
-      {/* <hr></hr>
-
-      <p>
-        I was originally an undeclared engineering major and transferred into the CS department. I wrote a bit about that on my blog here.
-      </p> */}
-{/* 
-      <div class = "thinking">
-        Currently thinking about:
-        <ol>
-          <li>
-            Communicating academic implications to short-form content
-          </li>
-          <li>
-            Long-form content and personalized science communication
-          </li>
-          <li>
-            end user feed curation for social media
-          </li>
-        </ol>
-      </div> */}
     </div>
-
-    <hr class="divider"></hr>
+    */}
   </Layout>
   );
 };
 
-
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- *  export const Head = () => <Seo title="Home" />
- * 
- * <h3>
-      Links: 
-      </h3>
-      <ul>
-        <li>
-          Email: <a href = "mailto:tyzhou05@uw.edu">tyzhou05@uw.edu</a> 
-        </li>
-        <li>
-          GitHub: <a href = "https://www.github.com/tyzhou05">tyzhou05</a> 
-        </li>
-        <li>
-          LinkedIn: <a href = "https://www.linkedin.com/in/tyzhou">tyzhou</a> 
-        </li>
-        <li>
-          Publications: <a href = "https://scholar.google.com/citations?user=S4zK_nsAAAAJ&hl=en">Google Scholar</a>
-        </li>
-      </ul>
- */
-
-
-
 export default IndexPage
+
+export const Head = () => <Seo title="Home" />
