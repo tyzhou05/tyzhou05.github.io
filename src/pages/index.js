@@ -13,8 +13,8 @@ const IndexPage = () => {
         <div className="home-row">
           <div className="home-label">About</div>
           <div className="home-body">
-            <p>Hi! I'm a senior studying computer science<br></br> at the University of Washington. <br></br>interested in HCI+design.</p>
-            <p>I'm graduating June 2027 and looking for<br></br><span class="highlight-yellow">a new grad SWE position.</span></p>
+            <p>Hi! I'm a senior studying computer science<br></br> at the University of Washington, <br></br>interested in HCI+design.</p>
+            <p>I'm graduating June 2027 and <br></br>looking for <span class="highlight-yellow">a new grad SWE position.</span></p>
             {/* <p>Fun fact: I'm 100% Cantonese but 75% Hakka and 25% Dongbei. 
               <br></br>I listened to three dialects growing up and resulted in 
               <br></br>fluency in fourth grade level Mandarin.
