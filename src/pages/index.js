@@ -46,8 +46,8 @@ const IndexPage = () => {
             <li><b>CSE 442</b> &ensp;Data Visualization</li>
             <li><b>CSE 440</b> &ensp;Human-Computer Interaction</li>
             <li><b>CSE 421</b> &ensp;Algorithms</li>
-            <li><b>CSE 332</b> &ensp;Data Structures and Parallelism</li>
-            <li><b>CSE 331</b> &ensp;Software Design and Development</li>
+            <li><b>CSE 332</b> &ensp;Data Structures & Parallelism</li>
+            <li><b>CSE 331</b> &ensp;Software Design & Implementation</li>
             <li><b>HCDE 308</b> &ensp;Visual Communication Design</li>
           </ul>
         </div>
