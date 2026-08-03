@@ -14,12 +14,14 @@ const IndexPage = () => {
           <div className="home-label">About</div>
           <div className="home-body">
             <p>Hi! I'm a senior studying computer science<br></br> at the University of Washington, <br></br>interested in HCI+design.</p>
-            <p>I'm graduating June 2027 and <br></br>looking for <span class="highlight-yellow">a new grad SWE position.</span></p>
-            {/* <p>Fun fact: I'm 100% Cantonese but 75% Hakka and 25% Dongbei. 
-              <br></br>I listened to three dialects growing up and resulted in 
-              <br></br>fluency in fourth grade level Mandarin.
+            <p>I'm graduating June 2027 and <br></br>looking for <span class="highlight-yellow">a new grad software engineering role.</span></p>
+            {/* <p>Fun fact: I'm 100% Cantonese but specifically
+              <br></br>75% Hakka Chinese. 
+              <br></br>I grew up listening to three dialects
+              <br></br>and only am about as fluent
+              <br></br>as a third grader in Mandarin.
             </p> */}
-            {/* <p>I've also recently been training for a half marathon. <br></br>To keep myself sane, I've been listening to plenty of benee, HOAX, and Keane.</p> */}
+            <p>Fun fact: I'm flat footed but have been recently training for a half marathon. <br></br>For my fuel, I'm trying every menu item from the <a href ="http://www.seawolfbakers.com/"> best bakery in Seattle.</a> <br></br>For my sanity, I'm listening to benee, HOAX, and Keane.</p>
             <p>Always happy to chat. Feel free to reach out :)</p>
           </div>
         </div>
